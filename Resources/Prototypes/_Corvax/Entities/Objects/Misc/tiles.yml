@@ -1,31 +1,34 @@
 - type: entity
-  name: tiles-wood-parquet
+  name: parquet wood floor
   parent: FloorTileItemBase
   id: FloorTileItemWoodParquet
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_parquet
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood
   - type: FloorTile
     outputs:
       - Plating
       - FloorWoodParquet
   - type: Stack
-    stackType: FloorTileWood
+    stackType: FloorTileItemWoodParquet
+  - type: Construction
+    graph: TileWoodParquet
+    node: woodtile
 
 - type: entity
-  name: tiles-wood-black
+  name: black wood floor
   parent: FloorTileItemBase
   id: FloorTileItemWoodBlack
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_black
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-black
   - type: FloorTile
     outputs:
@@ -33,17 +36,20 @@
       - FloorWoodBlack
   - type: Stack
     stackType: FloorTileItemWoodBlack
+  - type: Construction
+    graph: TileWoodBlack
+    node: woodtile
 
 - type: entity
-  name: tiles-wood-dark
+  name: dark wood floor
   parent: FloorTileItemBase
   id: FloorTileItemWoodDark
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_dark
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-dark
   - type: FloorTile
     outputs:
@@ -51,17 +57,20 @@
       - FloorWoodDark
   - type: Stack
     stackType: FloorTileItemWoodDark
+  - type: Construction
+    graph: TileWoodDark
+    node: woodtile
 
 - type: entity
-  name: tiles-wood-light
+  name: light wood floor
   parent: FloorTileItemBase
   id: FloorTileItemWoodLight
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_light
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-light
   - type: FloorTile
     outputs:
@@ -69,17 +78,20 @@
       - FloorWoodLight
   - type: Stack
     stackType: FloorTileItemWoodLight
+  - type: Construction
+    graph: TileWoodLight
+    node: woodtile
 
 - type: entity
-  name: tiles-wood-red
+  name: red wood floor
   parent: FloorTileItemBase
   id: FloorTileItemWoodRed
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_red
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-red
   - type: FloorTile
     outputs:
@@ -87,6 +99,9 @@
       - FloorWoodRed
   - type: Stack
     stackType: FloorTileItemWoodRed
+  - type: Construction
+    graph: TileWoodRed
+    node: woodtile
 
 - type: entity
   name: large black wood floor
@@ -94,10 +109,10 @@
   id: FloorTileItemWoodLargeBlack
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_large_black
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-black
   - type: FloorTile
     outputs:
@@ -105,6 +120,9 @@
       - FloorWoodLargeBlack
   - type: Stack
     stackType: FloorTileItemWoodLargeBlack
+  - type: Construction
+    graph: TileWoodLargeBlack
+    node: woodtile
 
 - type: entity
   name: large dark wood floor
@@ -112,10 +130,10 @@
   id: FloorTileItemWoodLargeDark
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_large_dark
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-dark
   - type: FloorTile
     outputs:
@@ -123,6 +141,9 @@
       - FloorWoodLargeDark
   - type: Stack
     stackType: FloorTileItemWoodLargeDark
+  - type: Construction
+    graph: TileWoodLargeDark
+    node: woodtile
 
 - type: entity
   name: large light wood floor
@@ -130,10 +151,10 @@
   id: FloorTileItemWoodLargeLight
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_large_light
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-light
   - type: FloorTile
     outputs:
@@ -141,6 +162,9 @@
       - FloorWoodLargeLight
   - type: Stack
     stackType: FloorTileItemWoodLargeLight
+  - type: Construction
+    graph: TileWoodLargeLight
+    node: woodtile
 
 - type: entity
   name: large red wood floor
@@ -148,10 +172,10 @@
   id: FloorTileItemWoodLargeRed
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_large_red
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-red
   - type: FloorTile
     outputs:
@@ -159,6 +183,9 @@
       - FloorWoodLargeRed
   - type: Stack
     stackType: FloorTileItemWoodLargeRed
+  - type: Construction
+    graph: TileWoodLargeRed
+    node: woodtile
 
 - type: entity
   name: parquet black wood floor
@@ -166,10 +193,10 @@
   id: FloorTileItemWoodParquetBlack
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_parquet_black
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-black
   - type: FloorTile
     outputs:
@@ -177,6 +204,9 @@
       - FloorWoodParquetBlack
   - type: Stack
     stackType: FloorTileItemWoodParquetBlack
+  - type: Construction
+    graph: TileWoodParquetBlack
+    node: woodtile
 
 - type: entity
   name: parquet dark wood floor
@@ -184,10 +214,10 @@
   id: FloorTileItemWoodParquetDark
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_parquet_dark
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-dark
   - type: FloorTile
     outputs:
@@ -195,6 +225,9 @@
       - FloorWoodParquetDark
   - type: Stack
     stackType: FloorTileItemWoodParquetDark
+  - type: Construction
+    graph: TileWoodParquetDark
+    node: woodtile
 
 - type: entity
   name: parquet light wood floor
@@ -202,10 +235,10 @@
   id: FloorTileItemWoodParquetLight
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_parquet_light
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-light
   - type: FloorTile
     outputs:
@@ -213,6 +246,9 @@
       - FloorWoodParquetLight
   - type: Stack
     stackType: FloorTileItemWoodParquetLight
+  - type: Construction
+    graph: TileWoodParquetLight
+    node: woodtile
 
 - type: entity
   name: parquet red wood floor
@@ -220,10 +256,10 @@
   id: FloorTileItemWoodParquetRed
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_parquet_red
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-red
   - type: FloorTile
     outputs:
@@ -231,6 +267,9 @@
       - FloorWoodParquetRed
   - type: Stack
     stackType: FloorTileItemWoodParquetRed
+  - type: Construction
+    graph: TileWoodParquetRed
+    node: woodtile
 
 - type: entity
   name: chess wood floor
@@ -238,10 +277,10 @@
   id: FloorTileItemWoodChess
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_chess
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood
   - type: FloorTile
     outputs:
@@ -249,6 +288,9 @@
       - FloorWoodChess
   - type: Stack
     stackType: FloorTileItemWoodChess
+  - type: Construction
+    graph: TileWoodChess
+    node: woodtile
 
 - type: entity
   name: chess black wood floor
@@ -256,10 +298,10 @@
   id: FloorTileItemWoodChessBlack
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_chess_black
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-black
   - type: FloorTile
     outputs:
@@ -267,6 +309,9 @@
       - FloorWoodChessBlack
   - type: Stack
     stackType: FloorTileItemWoodChessBlack
+  - type: Construction
+    graph: TileWoodChessBlack
+    node: woodtile
 
 - type: entity
   name: chess dark wood floor
@@ -274,10 +319,10 @@
   id: FloorTileItemWoodChessDark
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_chess_dark
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-dark
   - type: FloorTile
     outputs:
@@ -285,6 +330,9 @@
       - FloorWoodChessDark
   - type: Stack
     stackType: FloorTileItemWoodChessDark
+  - type: Construction
+    graph: TileWoodChessDark
+    node: woodtile
 
 - type: entity
   name: chess light wood floor
@@ -292,10 +340,10 @@
   id: FloorTileItemWoodChessLight
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_chess_light
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-light
   - type: FloorTile
     outputs:
@@ -303,6 +351,9 @@
       - FloorWoodChessLight
   - type: Stack
     stackType: FloorTileItemWoodChessLight
+  - type: Construction
+    graph: TileWoodChessLight
+    node: woodtile
 
 - type: entity
   name: chess red wood floor
@@ -310,10 +361,10 @@
   id: FloorTileItemWoodChessRed
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     state: wood_chess_red
   - type: Item
-    sprite: _Impstation/Objects/Tiles/wood.rsi
+    sprite: _Corvax/Objects/Tiles/wood.rsi
     heldPrefix: wood-red
   - type: FloorTile
     outputs:
@@ -321,3 +372,6 @@
       - FloorWoodChessRed
   - type: Stack
     stackType: FloorTileItemWoodChessRed
+  - type: Construction
+    graph: TileWoodChessRed
+    node: woodtile
