@@ -1,0 +1,53 @@
+- type: entity
+  parent: BaseWall
+  id: WallAstroHedge
+  name: astro-hedge wall
+  description: Gives a nature-like feel.
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: _Impstation/Structures/Walls/boschhedge.rsi
+  - type: Icon
+    sprite: _Impstation/Structures/Walls/boschhedge.rsi
+  - type: RCDDeconstructable
+    deconstructable: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: hedges
+    base: hedge
+
+
+- type: entity
+  parent: WallAstroHedge
+  id: WallAstroHedgeTrimmed
+  name: astro-hedge wall
+  suffix: Trimmed
+  components:
+  - type: Icon
+    sprite: _Impstation/Structures/Walls/boschhedge.rsi
+    state: full
+  - type: Sprite
+    sprite: _Impstation/Structures/Walls/boschhedge.rsi
+    layers:
+      - state: full
+      - map: [ "enum.EdgeLayer.South" ]
+        state: trim_south
+      - map: [ "enum.EdgeLayer.East" ]
+        state: trim_east
+      - map: [ "enum.EdgeLayer.North" ]
+        state: trim_north
+      - map: [ "enum.EdgeLayer.West" ]
+        state: trim_west
+  - type: IconSmooth
+    key: hedges
+    base: hedge
+  - type: SmoothEdge
