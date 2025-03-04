@@ -51,6 +51,17 @@
               amount: 2
               doAfter: 1
 
+        - to: hedgeGirder #imp
+          completed:
+            - !type:SnapToGrid
+              southRotation: false
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: FloorTileAstroGrass
+              amount: 2
+              doAfter: 1
+
         - to: uraniumWall
           completed:
             - !type:SnapToGrid
@@ -296,6 +307,70 @@
               doAfter: 10
             - tool: Screwing
               doAfter: 1
+
+    - node: hedgeGirder #imp
+      entity: HedgeGirder
+      edges:
+        - to: hedgeWall
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 2
+
+        - to: hedgeWallTrimmed
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - material: FloorTileAstroGrass
+              amount: 2
+              doAfter: 1
+            - material: Steel
+              amount: 2
+              doAfter: 2
+
+        - to: girder
+          completed:
+            - !type:GivePrototype
+              prototype: SheetSteel1
+              amount: 2
+            - !type:GivePrototype
+              prototype: FloorTileItemAstroGrass
+              amount: 2
+          steps:
+            - tool: Cutting
+              doAfter: 1
+
+    - node: hedgeWall #imp
+      entity: WallAstroHedge
+      edges:
+        - to: hedgeGirder
+          completed:
+            - !type:GivePrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Welding
+              doAfter: 10
+
+    - node: hedgeWallTrimmed #imp
+      entity: WallAstroHedgeTrimmed
+      edges:
+        - to: hedgeGirder
+          completed:
+            - !type:GivePrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Welding
+              doAfter: 10
 
     - node: reinforcedGirder
       entity: ReinforcedGirder

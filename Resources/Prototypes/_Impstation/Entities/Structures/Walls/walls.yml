@@ -1,26 +1,35 @@
 - type: entity
-  parent: BaseWall
+  parent: WallSolid
   id: WallAstroHedge
   name: astro-hedge wall
   description: Gives a nature-like feel.
   components:
-  - type: Tag
-    tags:
-      - Wall
   - type: Sprite
     sprite: _Impstation/Structures/Walls/boschhedge.rsi
   - type: Icon
     sprite: _Impstation/Structures/Walls/boschhedge.rsi
-  - type: RCDDeconstructable
-    deconstructable: false
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 400
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
   - type: IconSmooth
     key: hedges
     base: hedge
@@ -29,8 +38,7 @@
 - type: entity
   parent: WallAstroHedge
   id: WallAstroHedgeTrimmed
-  name: astro-hedge wall
-  suffix: Trimmed
+  name: astro-hedge wall unkempt
   components:
   - type: Icon
     sprite: _Impstation/Structures/Walls/boschhedge.rsi

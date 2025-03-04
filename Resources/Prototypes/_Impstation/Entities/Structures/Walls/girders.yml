@@ -1,0 +1,12 @@
+- type: entity
+  id: HedgeGirder
+  parent: Girder
+  name: astro-hedge girder
+  description: A large structural assembly made out of steel and astro-grass; it gives that nature-like feel.
+  components:
+    - type: Sprite
+      sprite: _Impstation/Structures/Walls/boschhedge.rsi
+      state: hedgegirder
+    - type: Construction
+      graph: Girder
+      node: hedgeGirder
