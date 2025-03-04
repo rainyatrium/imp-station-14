@@ -67,3 +67,39 @@
     state: closed
   conditions:
     - !type:TileNotBlocked
+
+- type: construction
+  name: astro-hedge wall
+  id: HedgeWall
+  graph: Girder
+  startNode: start
+  targetNode: hedgeWall
+  category: construction-category-structures
+  description: Gives a nature-like feel.
+  icon:
+    sprite: _Impstation/Structures/Walls/boschhedge.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: astro-hedge wall
+  id: HedgeWallTrimmed
+  graph: Girder
+  startNode: start
+  targetNode: hedgeWallTrimmed
+  category: construction-category-structures
+  description: Gives a nature-like feel.
+  icon:
+    sprite: _Impstation/Structures/Walls/boschhedge.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
