@@ -57,12 +57,6 @@ public sealed partial class MonumentComponent : Component
     public bool Enabled = true;
 
     /// <summary>
-    /// A bool that determines whether The Monument is tangible to non-cultists.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public bool HasCollision = false;
-
-    /// <summary>
     /// how long the monument takes to transform on a tier up
     /// </summary>
     [DataField, AutoNetworkedField]
@@ -106,6 +100,11 @@ public sealed partial class MonumentComponent : Component
         }
     };
 
+    /// <summary>
+    /// wether or not there's a stage change queued
+    /// </summary>
+    [DataField]
+    public bool CanTierUp = true;
 }
 
 [Serializable, NetSerializable]
