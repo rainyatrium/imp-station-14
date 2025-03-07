@@ -14,3 +14,20 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
+
+- type: construction
+  name: artful table
+  id: TableArtful
+  graph: Table
+  startNode: start
+  targetNode: TableArtful
+  category: construction-category-furniture
+  description: A square(?) piece of metal(?) standing on a leg. It's... bumpy...
+  icon:
+    sprite: _Impstation/Structures/Furniture/Tables/artful.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked

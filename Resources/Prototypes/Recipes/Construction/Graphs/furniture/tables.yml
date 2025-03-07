@@ -95,6 +95,8 @@
               doAfter: 1
 
 
+
+
     - node: CounterWoodFrame
       entity: CounterWoodFrame
       edges:
@@ -137,6 +139,26 @@
           completed:
             - !type:SpawnPrototype
               prototype: SheetSteel1
+              amount: 1
+          steps:
+            - tool: Anchoring
+              doAfter: 1
+        - to: TableArtful # imp
+          steps:
+            - material: FloorCarpetPink
+              amount: 1
+              doAfter: 1
+
+    - node: TableArtful # imp
+      entity: TableArtful
+      edges:
+        - to: TableFrame
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 1
+            - !type:SpawnPrototype
+              prototype: FloorCarpetItemPink
               amount: 1
           steps:
             - tool: Anchoring
