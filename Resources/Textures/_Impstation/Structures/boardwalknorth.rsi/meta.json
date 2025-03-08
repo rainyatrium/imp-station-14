@@ -1,0 +1,46 @@
+{
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
+  "copyright": "boardwalk sprite by rainyatrium and shamalin",
+	"size": {
+		"x": 32,
+		"y": 32
+	},
+	"states": [
+		{
+			"name": "boardwalk_0",
+			"directions": 4
+		},
+		{
+			"name": "boardwalk_1",
+			"directions": 4
+		},
+		{
+			"name": "boardwalk_2",
+			"directions": 4
+		},
+		{
+			"name": "boardwalk_3",
+			"directions": 4
+		},
+		{
+			"name": "boardwalk_4",
+			"directions": 4
+		},
+		{
+			"name": "boardwalk_5",
+			"directions": 4
+		},
+		{
+			"name": "boardwalk_6",
+			"directions": 4
+		},
+		{
+			"name": "boardwalk_7",
+			"directions": 4
+		},
+		{
+			"name": "full"
+		}
+	]
+}
