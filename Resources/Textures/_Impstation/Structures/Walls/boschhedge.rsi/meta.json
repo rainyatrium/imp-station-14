@@ -8,6 +8,7 @@
     "name": "hedge0",
     "directions": 4
 },
+
 {
     "name": "hedge1",
     "directions": 4
@@ -44,24 +45,71 @@
 },
 
 {
+    "name": "reinforcedhedge0",
+    "directions": 4
+},
+
+{
+    "name": "reinforcedhedge1",
+    "directions": 4
+},
+
+{
+    "name": "reinforcedhedge2",
+    "directions": 4
+},
+
+{
+    "name": "reinforcedhedge3",
+    "directions": 4
+},
+
+{
+    "name": "reinforcedhedge4",
+    "directions": 4
+},
+
+{
+    "name": "reinforcedhedge5",
+    "directions": 4
+},
+
+{
+    "name": "reinforcedhedge6",
+    "directions": 4
+},
+
+{
+    "name": "reinforcedhedge7",
+    "directions": 4
+},
+
+{
     "name": "hedgegirder"
 },
 
 {
     "name": "trim_south"
 },
+
 {
     "name": "trim_north"
 },
+
 {
     "name": "trim_east"
 },
+
 {
     "name": "trim_west"
 },
 
 {
     "name": "full"
+},
+
+{
+    "name": "reinforcedfull"
 }
 ]
 }

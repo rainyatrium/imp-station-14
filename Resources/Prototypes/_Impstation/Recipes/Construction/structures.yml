@@ -87,7 +87,7 @@
     - !type:TileNotBlocked
 
 - type: construction
-  name: astro-hedge wall
+  name: unkempt astro-hedge wall
   id: HedgeWallTrimmed
   graph: Girder
   startNode: start
@@ -97,6 +97,42 @@
   icon:
     sprite: _Impstation/Structures/Walls/boschhedge.rsi
     state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: reinforced astro-hedge wall
+  id: ReinforcedHedgeWall
+  graph: Girder
+  startNode: start
+  targetNode: reinforcedHedge
+  category: construction-category-structures
+  description: Gives a sturdy nature-like feel.
+  icon:
+    sprite: _Impstation/Structures/Walls/boschhedge.rsi
+    state: reinforcedfull
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: reinforced unkempt astro-hedge wall
+  id: ReinforcedHedgeWallTrimmed
+  graph: Girder
+  startNode: start
+  targetNode: reinforcedHedgeWallTrimmed
+  category: construction-category-structures
+  description: Gives a nature-like feel.
+  icon:
+    sprite: _Impstation/Structures/Walls/boschhedge.rsi
+    state: reinforcedfull
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false

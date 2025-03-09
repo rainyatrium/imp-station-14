@@ -322,19 +322,16 @@
               amount: 2
               doAfter: 2
 
-        - to: hedgeWallTrimmed
+        - to: reinforcedHedge
           completed:
             - !type:SnapToGrid
               southRotation: true
           conditions:
             - !type:EntityAnchored { }
           steps:
-            - material: FloorTileAstroGrass
+            - material: Plasteel
               amount: 2
               doAfter: 1
-            - material: Steel
-              amount: 2
-              doAfter: 2
 
         - to: girder
           completed:
@@ -351,6 +348,17 @@
     - node: hedgeWall #imp
       entity: WallAstroHedge
       edges:
+        - to: hedgeWallTrimmed
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - material: FloorTileAstroGrass
+              amount: 2
+              doAfter: 1
+
         - to: hedgeGirder
           completed:
             - !type:GivePrototype
@@ -363,14 +371,65 @@
     - node: hedgeWallTrimmed #imp
       entity: WallAstroHedgeTrimmed
       edges:
-        - to: hedgeGirder
+        - to: hedgeWall
           completed:
             - !type:GivePrototype
-              prototype: SheetSteel1
+              prototype: FloorTileItemAstroGrass
               amount: 2
           steps:
+            - tool: Cutting
+              doAfter: 1
+
+    - node: reinforcedHedge #imp
+      entity: WallAstroHedgeReinforced
+      edges:
+        - to: reinforcedHedgeWallTrimmed
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - material: FloorTileAstroGrass
+              amount: 2
+              doAfter: 1
+
+        - to: hedgeGirder
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+          steps:
+            - tool: Cutting
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 1
             - tool: Welding
-              doAfter: 10
+              doAfter: 5
+            - tool: Prying
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+            - tool: Welding
+              doAfter: 5
+            - tool: Prying
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 1
+            - tool: Cutting
+              doAfter: 1
+
+    - node: reinforcedHedgeWallTrimmed #imp
+      entity: WallAstroHedgeTrimmedReinforced
+      edges:
+        - to: reinforcedHedge
+          completed:
+            - !type:GivePrototype
+              prototype: FloorTileItemAstroGrass
+              amount: 2
+          steps:
+            - tool: Cutting
+              doAfter: 1
 
     - node: reinforcedGirder
       entity: ReinforcedGirder
