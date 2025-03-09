@@ -1,6 +1,6 @@
 - type: gameMap
   id: Bosch
-  mapName: 'Heofon Cloud Biodome'
+  mapName: 'Bosch Tropospheric Research Platform'
   mapPath: /Maps/_Impstation/bosch.yml
   minPlayers: 30
   maxPlayers: 80
@@ -9,7 +9,7 @@
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{0} Bosch Tropospheric Research Platform {1}'
+          mapNameTemplate: '{0} Heofon Cloud Biodome {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '-IMP-REC'

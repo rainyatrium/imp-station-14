@@ -61,67 +61,7 @@
   - type: SmoothEdge
 
 - type: entity
-  parent: WallSolid
-  id: WallAstroHedgeReinforced
-  name: reinforced astro-hedge wall
-  description: Gives a sturdy nature-like feel.
-  components:
-  - type: Sprite
-    sprite: _Impstation/Structures/Walls/boschhedge.rsi
-  - type: Icon
-    sprite: _Impstation/Structures/Walls/boschhedge.rsi
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 600
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-    - trigger:
-        !type:DamageTrigger
-        damage: 400
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-      - !type:ChangeConstructionNodeBehavior
-        node: girder
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-  - type: IconSmooth
-    key: hedges
-    base: reinforcedhedge
-
-- type: entity
-  parent: WallAstroHedgeReinforced
-  id: WallAstroHedgeTrimmedReinforced
-  name: reinforced astro-hedge wall unkempt
-  components:
-  - type: Icon
-    sprite: _Impstation/Structures/Walls/boschhedge.rsi
-    state: reinforcedfull
-  - type: Sprite
-    sprite: _Impstation/Structures/Walls/boschhedge.rsi
-    layers:
-      - state: full
-      - map: [ "enum.EdgeLayer.South" ]
-        state: trim_south
-      - map: [ "enum.EdgeLayer.East" ]
-        state: trim_east
-      - map: [ "enum.EdgeLayer.North" ]
-        state: trim_north
-      - map: [ "enum.EdgeLayer.West" ]
-        state: trim_west
-  - type: IconSmooth
-    key: hedges
-    base: reinforcedhedge
-  - type: SmoothEdge
-  
-- type: entity
+<<<<<<< HEAD
   parent: BaseWall
   id: WallReinforcedWood
   name: reinforced wood wall
@@ -138,6 +78,17 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
+=======
+  parent: WallSolid
+  id: WallAstroHedgeReinforced
+  name: reinforced astro-hedge wall
+  description: Gives a sturdy nature-like feel.
+  components:
+  - type: Sprite
+    sprite: _Impstation/Structures/Walls/boschhedge.rsi
+  - type: Icon
+    sprite: _Impstation/Structures/Walls/boschhedge.rsi
+>>>>>>> fb3e6c1cd77238cbcdaa86b720136be84ac7625a
   - type: Destructible
     thresholds:
     - trigger:
@@ -148,19 +99,28 @@
         acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
+<<<<<<< HEAD
           collection: WoodDestroyHeavy
+=======
+          collection: MetalBreak
+>>>>>>> fb3e6c1cd77238cbcdaa86b720136be84ac7625a
     - trigger:
         !type:DamageTrigger
         damage: 400
       behaviors:
       - !type:PlaySoundBehavior
         sound:
+<<<<<<< HEAD
           collection: WoodDestroyHeavy
+=======
+          collection: MetalBreak
+>>>>>>> fb3e6c1cd77238cbcdaa86b720136be84ac7625a
       - !type:ChangeConstructionNodeBehavior
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
+<<<<<<< HEAD
     key: walls
     base: reinf_over
   - type: Appearance
@@ -230,3 +190,32 @@
 
 
 
+=======
+    key: hedges
+    base: reinforcedhedge
+
+- type: entity
+  parent: WallAstroHedgeReinforced
+  id: WallAstroHedgeTrimmedReinforced
+  name: reinforced astro-hedge wall unkempt
+  components:
+  - type: Icon
+    sprite: _Impstation/Structures/Walls/boschhedge.rsi
+    state: reinforcedfull
+  - type: Sprite
+    sprite: _Impstation/Structures/Walls/boschhedge.rsi
+    layers:
+      - state: full
+      - map: [ "enum.EdgeLayer.South" ]
+        state: trim_south
+      - map: [ "enum.EdgeLayer.East" ]
+        state: trim_east
+      - map: [ "enum.EdgeLayer.North" ]
+        state: trim_north
+      - map: [ "enum.EdgeLayer.West" ]
+        state: trim_west
+  - type: IconSmooth
+    key: hedges
+    base: reinforcedhedge
+  - type: SmoothEdge
+>>>>>>> fb3e6c1cd77238cbcdaa86b720136be84ac7625a
