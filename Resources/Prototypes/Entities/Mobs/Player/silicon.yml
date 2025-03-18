@@ -96,6 +96,7 @@
     interfaces:
       enum.SiliconLawsUiKey.Key:
         type: SiliconLawBoundUserInterface
+  - type: ShowJobIcons
 
 # Ai
 - type: entity
@@ -537,8 +538,7 @@
 - type: entity
   id: StationAiBrain
   parent: PositronicBrain
-  categories: [ HideSpawnMenu ]
-  suffix: DO NOT MAP
+  categories: [ HideSpawnMenu, DoNotMap ]
   components:
   - type: Sprite
     # Once it's in a core it's pretty much an abstract entity at that point.
@@ -585,8 +585,7 @@
   id: StationAiHolo
   name: AI eye
   description: The AI's viewer.
-  categories: [ HideSpawnMenu ]
-  suffix: DO NOT MAP
+  categories: [ HideSpawnMenu, DoNotMap ]
   components:
   - type: NoFTL
   - type: WarpPoint
@@ -607,8 +606,7 @@
   id: StationAiHoloLocal
   name: AI hologram
   description: A holographic representation of an AI.
-  categories: [ HideSpawnMenu ]
-  suffix: DO NOT MAP
+  categories: [ HideSpawnMenu, DoNotMap ]
   components:
   - type: Transform
     anchored: true
@@ -858,6 +856,7 @@
       tags:
       - DroneUsable
       - Trash
+      - Crayon
     blacklist:
       tags:
       - Syringe
@@ -865,8 +864,24 @@
       - Sidearm
       - Taser
       components:
+      - Handcuff
       - Gun
       - EnergySword
+  - type: Illiterate # imp special component. Disables reading and writing on paper.
+  - type: ContainerContainer # imp.
+    containers:
+      cell_slot: !type:ContainerSlot { }
+  - type: PowerCellSlot # imp.
+    cellSlotId: cell_slot
+    fitsInCharger: true
+  - type: PowerCellDraw # imp
+    drawRate: 0.6
+  - type: ItemSlots # imp
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+        disableEject: true
   - type: PAI # imp; this is added specifically for the internal station map feature but the other aspects are not especially against the identity of drones. and i dont want to put the work into ECS-ifying PAIComponent
     mapActionId: ActionDroneOpenMap # redefining these to reflavor their descriptions.
     midiActionId: ActionDronePlayMidi
@@ -918,6 +933,12 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 5
     baseSprintSpeed : 5
+    minimumFrictionSpeed: 0
+    weightlessAcceleration: 1.2
+    weightlessFriction: 1
+    weightlessFrictionNoInput: 2 
+    offGridFriction: 1.5
+    weightlessModifier: 1
   - type: MobState
     allowedStates:
       - Alive
@@ -925,7 +946,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      60: Dead
+      25: Dead
   - type: Flash
   - type: NoSlip
   - type: StatusEffects
@@ -950,7 +971,7 @@
     - state: shell
       sprite: Mobs/Silicon/drone.rsi
       map: ["base"]
-  - type: MovementIgnoreGravity
+  - type: MovementAlwaysTouching
   - type: Fixtures
     fixtures:
       fix1:
