@@ -1,6 +1,18 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Map
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/18/2025 00:30:52
+  entityCount: 10995
+maps:
+- 1
+grids:
+- 1
+- 2
+orphans: []
+nullspace: []
 tilemap:
   0: Space
   2: FloorAsteroidSand
@@ -98,9 +110,49 @@ entities:
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
-    - type: LoadedMap
     - type: Parallax
       parallax: Sky
+    - type: MapGrid
+      chunks: {}
+    - type: SpreaderGrid
+    - type: Gravity
+      gravityShakeSound: !type:SoundPathSpecifier
+        path: /Audio/Effects/alert.ogg
+      inherent: True
+      enabled: True
+    - type: DecalGrid
+      chunkCollection:
+        version: 2
+        nodes: []
+    - type: MapLight
+      ambientLightColor: '#D8B059FF'
+    - type: Roof
+      data: {}
+    - type: LightCycle
+      minLevel: '#19267FFF'
+      clipLevel: '#FFFFFEFF'
+      minLightLevel: 3
+      offset: 1200
+      duration: 5400
+    - type: MapAtmosphere
+      space: False
+      mixture:
+        volume: 2500
+        immutable: True
+        temperature: 293.15
+        moles:
+        - 21.82478
+        - 82.10312
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
   - uid: 2
     components:
     - type: MetaData
@@ -3244,7 +3296,7 @@ entities:
       pos: 14.5,-37.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -43055.9
+      secondsUntilStateChange: -44255.164
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -4015,7 +4067,7 @@ entities:
       pos: 49.5,25.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -19289.453
+      secondsUntilStateChange: -20488.719
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 1
@@ -4326,7 +4378,7 @@ entities:
       pos: 14.5,-41.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -48436.684
+      secondsUntilStateChange: -49635.95
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14870,19 +14922,11 @@ entities:
     - type: Transform
       pos: 18.476294,-31.253225
       parent: 2
-    - type: ContainerContainer
-      containers:
-        cardstack-container: !type:Container
-          ents: []
   - uid: 4263
     components:
     - type: Transform
       pos: 18.017647,-31.363298
       parent: 2
-    - type: ContainerContainer
-      containers:
-        cardstack-container: !type:Container
-          ents: []
 - proto: Carpet
   entities:
   - uid: 1315
@@ -22862,17 +22906,11 @@ entities:
     - type: Transform
       pos: 1.2481366,46.827953
       parent: 2
-    - type: ContainerContainer
-      containers:
-        lens_slot: !type:ContainerSlot {}
   - uid: 3181
     components:
     - type: Transform
       pos: 1.2168866,46.577953
       parent: 2
-    - type: ContainerContainer
-      containers:
-        lens_slot: !type:ContainerSlot {}
 - proto: ClothingHandsGlovesColorYellow
   entities:
   - uid: 2079
@@ -24654,6 +24692,10 @@ entities:
           ents:
           - 6893
           - 6894
+    - type: UserInterface
+      actors:
+        enum.StorageUiKey.Key:
+        - invalid
     - type: ActiveUserInterface
 - proto: DresserChiefEngineerFilled
   entities:
@@ -45706,7 +45748,7 @@ entities:
       pos: -38.5,-63.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -7430.889
+      secondsUntilStateChange: -8630.154
       state: Opening
 - proto: SpawnMobCow
   entities:
@@ -63500,18 +63542,11 @@ entities:
       rot: 3.141592653589793 rad
       pos: -65.5,8.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 8851
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: -51.5,10.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
 - proto: Welder
   entities:
   - uid: 3440
@@ -63639,7 +63674,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -29446.281
+      secondsUntilStateChange: -30645.547
       state: Opening
     - type: Airlock
       autoClose: False
@@ -64420,147 +64455,96 @@ entities:
     - type: Transform
       pos: 63.5,-13.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 4168
     components:
     - type: Transform
       pos: 13.5,-50.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 4169
     components:
     - type: Transform
       pos: 18.5,-53.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 4281
     components:
     - type: Transform
       pos: 25.5,-33.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 6045
     components:
     - type: Transform
       pos: 14.5,48.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 6098
     components:
     - type: Transform
       pos: 16.5,57.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 9073
     components:
     - type: Transform
       pos: 51.5,14.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 9684
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 52.5,-25.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 9686
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 51.5,-25.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 9729
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 47.5,-21.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 9730
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 47.5,-22.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 9731
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 47.5,-20.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 9736
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 48.5,-25.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 9748
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 55.5,-32.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 9772
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 50.5,-30.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 9836
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 57.5,-26.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
   - uid: 10938
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 31.5,2.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        bucket: !type:ContainerSlot {}
 - proto: WoodenBench
   entities:
   - uid: 5195
