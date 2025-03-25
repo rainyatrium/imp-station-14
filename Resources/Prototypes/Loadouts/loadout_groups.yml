@@ -22,6 +22,7 @@
   - ClothingHeadHatKippahWhiteAndBlue #imp
   - ClothingHeadPaperSack #imp
   - ClothingHeadPaperSackSmile #imp
+  - ClothingNeckLGBTPin
   - ClothingNeckAromanticPin
   - ClothingNeckAsexualPin
   - ClothingNeckAutismPin
@@ -34,6 +35,7 @@
   - ClothingNeckNonBinaryPin
   - ClothingNeckPansexualPin
   - ClothingNeckOmnisexualPin
+  - ClothingNeckGenderqueerPin
   - ClothingNeckTransPin
   - FlippoLighter #imp
   - FlowerWreath
@@ -46,6 +48,7 @@
   - HarmonicaInstrument #imp
   - Headphones
   - HeartLocket #imp
+  - HeartLocketSilver #imp
   - Lighter
   - NewtonCradle #imp
   - PlushieDoll #imp
@@ -107,6 +110,7 @@
   loadouts:
   - EmergencyNitrogen
   - EmergencyOxygen
+  - LoadoutSpeciesAquaticFullTank # Imp
   - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
@@ -114,6 +118,7 @@
   name: loadout-group-EVA-tank
   hidden: true
   loadouts:
+  - LoadoutSpeciesAquaticFullTank # Imp
   - LoadoutSpeciesEVANitrogen
   - LoadoutSpeciesEVAOxygen
 
@@ -189,6 +194,7 @@
   loadouts:
   - HoPJumpsuit
   - HoPJumpskirt
+  - HoPBoatswain # DeltaV
 
 - type: loadoutGroup
   id: HoPNeck
@@ -256,6 +262,8 @@
   name: loadout-group-passenger-neck
   minLimit: 0
   loadouts:
+  - WrappedScarfBlack #imp
+  - WrappedScarfWhite #imp
   - Mantle
   - GreyCloak #imp
 
@@ -265,7 +273,7 @@
   minLimit: 0
   loadouts:
   - PassengerWintercoat
-  - BomberLightweight #imp
+  - BomberBlack #imp
 
 - type: loadoutGroup
   id: PassengerShoes
@@ -363,8 +371,12 @@
   - LawyerJumpskirtRed
   - LawyerJumpsuitGood
   - LawyerJumpskirtGood
+  - ClerkJumpsuit # DeltaV
+  - ClerkJumpskirt # DeltaV
   - ClothingUniformCreamSuit #imp
   - ClothingUniformCreamSuitSkirt #imp
+  - ProsecutorJumpsuit # DeltaV
+  - ProsecutorJumpskirt # DeltaV
 
 - type: loadoutGroup
   id: LawyerNeck
@@ -372,6 +384,7 @@
   minLimit: 0
   loadouts:
   - LawyerNeck
+  - ProsecutorNeck # DeltaV
 
 - type: loadoutGroup
   id: ChaplainHead
@@ -566,6 +579,7 @@
   loadouts:
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
+  - LoadoutSpeciesAquaticFullTank # Imp
   - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
@@ -590,7 +604,9 @@
   name: loadout-group-mime-jumpsuit
   loadouts:
   - MimeJumpsuit
+  - MimeJumpsuitCropped #imp
   - MimeJumpskirt
+  - MimeJumpskirtCropped #imp
 
 - type: loadoutGroup
   id: MimeBackpack
@@ -606,6 +622,7 @@
   minLimit: 0
   loadouts:
   - MimeWintercoat
+  - MimePufferCoat #imp
 
 - type: loadoutGroup
   id: MimeBelt
@@ -613,6 +630,7 @@
   loadouts:
   - MimeSuspendersRed
   - MimeSuspendersBlack
+  - FoamSabre # DeltaV - Add foam sabre to the mime's loadout.
 
 - type: loadoutGroup
   id: SurvivalMime
@@ -622,6 +640,7 @@
   loadouts:
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
+  - LoadoutSpeciesAquaticFullTank # Imp
   - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
@@ -712,6 +731,7 @@
   loadouts:
   - QuartermasterWintercoat
   - QuartermasterWintercoatXXXL #imp
+  - QuartermasterPoncho #imp
 
 - type: loadoutGroup
   id: QuartermasterShoes
@@ -774,6 +794,7 @@
   loadouts:
   - SalvageSpecialistWintercoat
   - BomberCargo #imp
+  - SalvageSpecialistDecapoidCoat #imp
 
 - type: loadoutGroup
   id: SalvageSpecialistShoes
@@ -835,6 +856,7 @@
 - type: loadoutGroup
   id: StationEngineerHead
   name: loadout-group-station-engineer-head
+  minLimit: 0
   loadouts:
   - StationEngineerHardhatYellow
   - StationEngineerHardhatOrange
@@ -923,6 +945,7 @@
   loadouts:
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
+  - LoadoutSpeciesAquaticFullTank # Imp
   - LoadoutSpeciesVoxNitrogen
 
 # Science
@@ -933,6 +956,7 @@
   minLimit: 0
   loadouts:
   - ResearchDirectorBeret
+  - ResearchDirectorHood # DeltaV
 
 - type: loadoutGroup
   id: ResearchDirectorNeck
@@ -941,6 +965,7 @@
   loadouts:
   - ResearchDirectorMantle
   - ResearchDirectorCloak
+  - MystagogueCloak # DeltaV
   - ScarfPurple # imp
 
 - type: loadoutGroup
@@ -956,6 +981,7 @@
   minLimit: 0
   loadouts:
   - ResearchDirectorLabCoat
+  - MystaLabCoat # DeltaV
   - ResearchDirectorWintercoat
 
 - type: loadoutGroup
@@ -1064,6 +1090,7 @@
   minLimit: 0
   loadouts:
   - HeadofSecurityHead
+  - HeadofSecurityHeadDV # DeltaV
   - HeadofSecurityBeret
   - HeadofSecurityPatrolCap # imp
 
@@ -1103,6 +1130,8 @@
   - ArmorVest #imp
   - ArmorVestSlim #imp
   - ArmorVestCompact #imp
+  - DuraVest # DeltaV
+  - PlateCarrier # DeltaV
   - HeadofSecurityEliteArmor #imp
 
 - type: loadoutGroup
@@ -1119,7 +1148,12 @@
   loadouts:
   - WardenJumpsuit
   - WardenJumpskirt
+  - WardenTurtleskirt # DeltaV
+  - WardenTurtlesuit # DeltaV
   - SecurityJumpsuitBlue # imp
+  - ChiefJusticeFormalJumpsuit # DeltaV
+  - ChiefJusticeFormalJumpskirt # DeltaV
+  - ChiefJusticeWhiteJumpsuit # DeltaV
 
 - type: loadoutGroup
   id: WardenOuterClothing
@@ -1130,6 +1164,8 @@
   - ArmorVest #imp
   - ArmorVestSlim #imp
   - ArmorVestCompact #imp
+  - DuraVest # DeltaV
+  - PlateCarrier # DeltaV
   - WardenWinterCoatUnarmored # imp
   - BomberSecurity #imp
 
@@ -1178,7 +1214,10 @@
   - ArmorVest
   - ArmorVestSlim
   - ArmorVestCompact #imp
+  - DuraVest # DeltaV
+  - PlateCarrier # DeltaV
   - SecurityOfficerWintercoat
+  - StasecSweater # DeltaV
   - BomberSecurity #imp
 
 - type: loadoutGroup
@@ -1218,6 +1257,8 @@
   loadouts:
   - DetectiveJumpsuit
   - DetectiveJumpskirt
+  - ForensicSpecTurtleskirt # DeltaV
+  - ForensicSpecTurtlesuit # DeltaV
   - NoirJumpsuit
   - NoirJumpskirt
   - ClothingUniformMiamiVice #imp
@@ -1235,6 +1276,8 @@
   - ArmorVest #imp
   - ArmorVestSlim #imp
   - ArmorVestCompact #imp
+  - DuraVest # DeltaV
+  - PlateCarrier # DeltaV
   - BomberSecurity #imp
   - ClothingOuterCoatFieldJacket #imp
 
@@ -1253,6 +1296,7 @@
   loadouts:
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
+  - LoadoutSpeciesAquaticFullTank # Imp
   - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
@@ -1306,6 +1350,8 @@
   loadouts:
   - BrownShoes
   - WhiteShoes # imp
+  - LacedShoes #imp
+  - LeatherShoes
   - MedicalWinterBoots
 
 - type: loadoutGroup
@@ -1458,6 +1504,7 @@
   loadouts:
   - EmergencyNitrogenMedical
   - EmergencyOxygenMedical
+  - LoadoutSpeciesAquaticFullTank # Imp
   - LoadoutSpeciesVoxNitrogen
 
 # Wildcards
@@ -1494,6 +1541,7 @@
   loadouts:
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
+  - LoadoutSpeciesAquaticFullTank # Imp
   - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
