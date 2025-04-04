@@ -31,6 +31,11 @@
     transferDamage: true
     revertOnCrit: false
     revertOnDeath: true
+    duration: 180 # imp change
+    polymorphSound: !type:SoundPathSpecifier
+      path: /Audio/Magic/forcewall.ogg
+    exitPolymorphSound: !type:SoundPathSpecifier
+      path: /Audio/Magic/forcewall.ogg
 
 - type: polymorph
   id: WizardForcedSkeleton
@@ -42,6 +47,10 @@
     transferDamage: true
     revertOnCrit: false
     revertOnDeath: false
+    polymorphSound: !type:SoundPathSpecifier
+      path: /Audio/Magic/forcewall.ogg
+    exitPolymorphSound: !type:SoundPathSpecifier
+      path: /Audio/Magic/forcewall.ogg
 
 - type: polymorph
   id: WizardForcedMonkey
@@ -53,6 +62,11 @@
     transferDamage: true
     revertOnCrit: true
     revertOnDeath: true
+    duration: 180 # imp change
+    polymorphSound: !type:SoundPathSpecifier
+      path: /Audio/Magic/forcewall.ogg
+    exitPolymorphSound: !type:SoundPathSpecifier
+      path: /Audio/Magic/forcewall.ogg
 
 - type: polymorph
   id: WizardWallDoor
@@ -64,6 +78,10 @@
     transferDamage: false
     revertOnCrit: false
     revertOnDeath: false
+    polymorphSound: !type:SoundPathSpecifier
+      path: /Audio/Magic/forcewall.ogg
+    exitPolymorphSound: !type:SoundPathSpecifier
+      path: /Audio/Magic/forcewall.ogg
 
 - type: polymorph
   id: WizardForcedCluwne
@@ -75,6 +93,11 @@
     inventory: None
     revertOnCrit: true
     revertOnDeath: true
+    duration: 180 # imp change
+    polymorphSound: !type:SoundPathSpecifier
+      path: /Audio/Magic/forcewall.ogg
+    exitPolymorphSound: !type:SoundPathSpecifier
+      path: /Audio/Magic/forcewall.ogg
 
 # this is a test for transferring some visual appearance stuff
 - type: polymorph
@@ -106,6 +129,11 @@
     revertOnCrit: false
     revertOnDeath: true
     revertOnEat: true
+    duration: 180 # imp change
+    polymorphSound: !type:SoundPathSpecifier # imp change
+      path: /Audio/Magic/forcewall.ogg
+    exitPolymorphSound: !type:SoundPathSpecifier # imp change
+      path: /Audio/Magic/forcewall.ogg
 
 - type: polymorph
   id: TreeMorph
