@@ -2418,17 +2418,11 @@ entities:
     - type: Transform
       pos: -62.5,-30.5
       parent: 4
-    - type: DeviceNetwork
-      configurators:
-      - invalid
   - uid: 3761
     components:
     - type: Transform
       pos: -68.5,-30.5
       parent: 4
-    - type: DeviceNetwork
-      configurators:
-      - invalid
   - uid: 3827
     components:
     - type: Transform
@@ -13922,9 +13916,6 @@ entities:
       parent: 4
     - type: FaxMachine
       name: Science
-    - type: DeviceNetwork
-      configurators:
-      - invalid
   - uid: 3853
     components:
     - type: Transform
@@ -14174,8 +14165,6 @@ entities:
       pos: -30.5,0.5
       parent: 4
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 2878
       - 2892
@@ -14186,8 +14175,6 @@ entities:
       pos: -30.5,-0.5
       parent: 4
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 2878
       - 2892
@@ -24760,9 +24747,6 @@ entities:
     - type: Transform
       pos: -38.5,11.5
       parent: 4
-    - type: DeviceNetwork
-      configurators:
-      - invalid
   - uid: 945
     components:
     - type: Transform
