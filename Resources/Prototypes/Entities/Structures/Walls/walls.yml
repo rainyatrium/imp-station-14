@@ -1371,6 +1371,8 @@
   name: mining wall
   description: Rugged and heat-resistant. #imp
   components:
+  - type: StaticPrice
+    price: 400
   - type: Tag
     tags:
       - Wall
