@@ -4,8 +4,8 @@ meta:
   engineVersion: 248.0.2
   forkId: ""
   forkVersion: ""
-  time: 04/03/2025 05:16:00
-  entityCount: 211
+  time: 04/05/2025 03:07:55
+  entityCount: 216
 maps: []
 grids:
 - 1
@@ -260,31 +260,49 @@ entities:
     - type: Transform
       pos: 5.5,-3.5
       parent: 1
-- proto: BlastDoor
-  entities:
   - uid: 92
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 6.5,-3.5
+      pos: 6.5,2.5
       parent: 1
   - uid: 93
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 2.5,-3.5
+      pos: 2.5,2.5
       parent: 1
   - uid: 94
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 2.5,2.5
+      pos: 2.5,-3.5
       parent: 1
   - uid: 95
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
+      pos: 6.5,-3.5
+      parent: 1
+- proto: BlastDoor
+  entities:
+  - uid: 209
+    components:
+    - type: Transform
+      pos: 2.5,2.5
+      parent: 1
+  - uid: 210
+    components:
+    - type: Transform
       pos: 6.5,2.5
+      parent: 1
+  - uid: 214
+    components:
+    - type: Transform
+      pos: 6.5,-3.5
+      parent: 1
+  - uid: 216
+    components:
+    - type: Transform
+      pos: 2.5,-3.5
       parent: 1
 - proto: ButtonFrameCaution
   entities:
@@ -942,6 +960,13 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -1.5,-2.5
       parent: 1
+- proto: GeneratorBasic15kW
+  entities:
+  - uid: 111
+    components:
+    - type: Transform
+      pos: -1.5,-1.5
+      parent: 1
 - proto: GeneratorWallmountAPU
   entities:
   - uid: 205
@@ -1019,6 +1044,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: 11.5,-1.5
       parent: 1
+- proto: Gyroscope
+  entities:
+  - uid: 127
+    components:
+    - type: Transform
+      pos: -0.5,-1.5
+      parent: 1
 - proto: LockableButtonCargo
   entities:
   - uid: 116
@@ -1036,9 +1068,9 @@ entities:
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:
-        93:
+        216:
         - Pressed: Toggle
-        92:
+        214:
         - Pressed: Toggle
   - uid: 146
     components:
@@ -1048,22 +1080,16 @@ entities:
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:
-        94:
+        210:
         - Pressed: Toggle
-        95:
+        209:
         - Pressed: Toggle
 - proto: MiniGyroscope
   entities:
-  - uid: 111
+  - uid: 208
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -1.5,-1.5
-      parent: 1
-  - uid: 127
-    components:
-    - type: Transform
-      pos: -0.5,-1.5
+      pos: 8.5,-0.5
       parent: 1
 - proto: PlasticFlapsAirtightClear
   entities:
