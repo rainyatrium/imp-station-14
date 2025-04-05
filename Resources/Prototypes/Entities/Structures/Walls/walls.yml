@@ -543,7 +543,7 @@
   - type: Tag
     tags:
     - Wall
-    - Diagonal    
+    - Diagonal
   - type: Sprite
     drawdepth: Walls
     sprite: Structures/Walls/plastitanium_diagonal.rsi
@@ -1395,31 +1395,6 @@
     - mining
     - miningB
   - type: Appearance
-
-- type: entity
-  parent: WallShuttleDiagonal
-  id: WallMiningDiagonal
-  name: mining wall
-  suffix: diagonal
-  placement:
-    mode: SnapgridCenter
-    snap:
-    - Wall
-  components:
-  - type: Construction
-    graph: Girder
-    node: diagonalMiningWall
-  - type: Sprite
-    drawdepth: Walls
-    sprite: Structures/Walls/mining_diagonal.rsi
-    state: state0
-  - type: IconSmooth
-    mode: Diagonal
-    key: walls
-    base: state
-  - type: Icon
-    sprite: Structures/Walls/mining_diagonal.rsi
-    state: state0
 
 
 # Vault Walls
