@@ -1409,7 +1409,7 @@
     snap:
     - Wall
   components:
-  - type: Construction
+  - type: Construction #imp
     graph: Girder
     node: diagonalMiningWall
   - type: Sprite
