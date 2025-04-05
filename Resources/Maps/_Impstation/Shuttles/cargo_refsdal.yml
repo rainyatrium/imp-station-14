@@ -4,7 +4,7 @@ meta:
   engineVersion: 248.0.2
   forkId: ""
   forkVersion: ""
-  time: 04/04/2025 21:58:00
+  time: 04/05/2025 03:07:55
   entityCount: 216
 maps: []
 grids:
@@ -1044,6 +1044,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: 11.5,-1.5
       parent: 1
+- proto: Gyroscope
+  entities:
+  - uid: 127
+    components:
+    - type: Transform
+      pos: -0.5,-1.5
+      parent: 1
 - proto: LockableButtonCargo
   entities:
   - uid: 116
@@ -1079,11 +1086,6 @@ entities:
         - Pressed: Toggle
 - proto: MiniGyroscope
   entities:
-  - uid: 127
-    components:
-    - type: Transform
-      pos: -0.5,-1.5
-      parent: 1
   - uid: 208
     components:
     - type: Transform
