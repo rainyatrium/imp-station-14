@@ -4,8 +4,8 @@ meta:
   engineVersion: 248.0.2
   forkId: ""
   forkVersion: ""
-  time: 04/05/2025 03:06:04
-  entityCount: 4789
+  time: 04/05/2025 03:50:15
+  entityCount: 4796
 maps:
 - 1
 grids:
@@ -2028,7 +2028,7 @@ entities:
       pos: -15.5,0.5
       parent: 4
     - type: Door
-      secondsUntilStateChange: -58490.293
+      secondsUntilStateChange: -59630.414
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2040,7 +2040,7 @@ entities:
       pos: -15.5,-0.5
       parent: 4
     - type: Door
-      secondsUntilStateChange: -58488.992
+      secondsUntilStateChange: -59629.113
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2052,7 +2052,7 @@ entities:
       pos: -15.5,1.5
       parent: 4
     - type: Door
-      secondsUntilStateChange: -58492.895
+      secondsUntilStateChange: -59633.016
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2075,7 +2075,7 @@ entities:
       pos: -42.5,24.5
       parent: 4
     - type: Door
-      secondsUntilStateChange: -6425.905
+      secondsUntilStateChange: -7566.025
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -9293,6 +9293,11 @@ entities:
     - type: Transform
       pos: -42.5,24.5
       parent: 4
+  - uid: 538
+    components:
+    - type: Transform
+      pos: -33.5,10.5
+      parent: 4
   - uid: 630
     components:
     - type: Transform
@@ -9302,11 +9307,6 @@ entities:
     components:
     - type: Transform
       pos: -29.5,12.5
-      parent: 4
-  - uid: 737
-    components:
-    - type: Transform
-      pos: -33.5,10.5
       parent: 4
   - uid: 776
     components:
@@ -10777,11 +10777,6 @@ entities:
     - type: Transform
       pos: -38.5,17.5
       parent: 4
-  - uid: 796
-    components:
-    - type: Transform
-      pos: -33.5,10.5
-      parent: 4
   - uid: 799
     components:
     - type: Transform
@@ -10792,6 +10787,11 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -29.5,9.5
+      parent: 4
+  - uid: 1227
+    components:
+    - type: Transform
+      pos: -33.5,10.5
       parent: 4
   - uid: 1872
     components:
@@ -11291,11 +11291,11 @@ entities:
       parent: 4
 - proto: ComputerAlert
   entities:
-  - uid: 538
+  - uid: 737
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -6.5,-3.5
+      pos: -7.5,-3.5
       parent: 4
   - uid: 1705
     components:
@@ -11374,6 +11374,13 @@ entities:
     - type: Transform
       pos: -7.5,4.5
       parent: 4
+- proto: ComputerIFF
+  entities:
+  - uid: 817
+    components:
+    - type: Transform
+      pos: -11.5,-4.5
+      parent: 4
 - proto: ComputerMassMedia
   entities:
   - uid: 547
@@ -11420,11 +11427,11 @@ entities:
       parent: 4
 - proto: ComputerSalvageExpedition
   entities:
-  - uid: 1229
+  - uid: 796
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -7.5,-3.5
+      pos: -6.5,-3.5
       parent: 4
 - proto: ComputerShuttle
   entities:
@@ -11468,13 +11475,6 @@ entities:
     components:
     - type: Transform
       pos: -26.5,18.5
-      parent: 4
-- proto: ComputerSurveillanceWirelessCameraMonitor
-  entities:
-  - uid: 54
-    components:
-    - type: Transform
-      pos: -11.5,-4.5
       parent: 4
 - proto: ComputerTelevision
   entities:
@@ -12011,7 +12011,7 @@ entities:
       pos: -17.5,-6.5
       parent: 4
     - type: Door
-      secondsUntilStateChange: -56629.895
+      secondsUntilStateChange: -57770.016
       state: Closing
   - uid: 1791
     components:
@@ -12037,7 +12037,7 @@ entities:
       pos: -35.5,-19.5
       parent: 4
     - type: Door
-      secondsUntilStateChange: -5200.8394
+      secondsUntilStateChange: -6340.9595
       state: Closing
 - proto: CurtainsGreen
   entities:
@@ -13911,6 +13911,8 @@ entities:
     - type: Transform
       pos: -36.5,-8.5
       parent: 4
+    - type: FaxMachine
+      name: Library
     - type: ApcPowerReceiver
       needsPower: False
   - uid: 3850
@@ -13918,6 +13920,8 @@ entities:
     - type: Transform
       pos: -30.5,20.5
       parent: 4
+    - type: FaxMachine
+      name: Science
     - type: DeviceNetwork
       configurators:
       - invalid
@@ -14856,6 +14860,11 @@ entities:
     - type: Transform
       pos: -34.5,-2.5
       parent: 4
+  - uid: 950
+    components:
+    - type: Transform
+      pos: -33.5,10.5
+      parent: 4
   - uid: 1033
     components:
     - type: Transform
@@ -14980,14 +14989,6 @@ entities:
     components:
     - type: Transform
       pos: -34.5,13.5
-      parent: 4
-- proto: FloorWaterEntity
-  entities:
-  - uid: 1227
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -33.5,10.5
       parent: 4
 - proto: FloraTree
   entities:
@@ -20572,6 +20573,11 @@ entities:
     - type: Transform
       pos: -9.5,7.5
       parent: 4
+  - uid: 54
+    components:
+    - type: Transform
+      pos: -33.5,10.5
+      parent: 4
   - uid: 134
     components:
     - type: Transform
@@ -20762,11 +20768,6 @@ entities:
     components:
     - type: Transform
       pos: -2.5,5.5
-      parent: 4
-  - uid: 817
-    components:
-    - type: Transform
-      pos: -33.5,10.5
       parent: 4
   - uid: 1045
     components:
@@ -21807,6 +21808,13 @@ entities:
     - type: Transform
       pos: -25.5,-17.5
       parent: 4
+- proto: LockerDetectiveFilled
+  entities:
+  - uid: 1229
+    components:
+    - type: Transform
+      pos: -23.5,15.5
+      parent: 4
 - proto: LockerEngineerFilledHardsuit
   entities:
   - uid: 239
@@ -21895,6 +21903,8 @@ entities:
     - type: Transform
       pos: -39.5,-19.5
       parent: 4
+- proto: LockerParamedicFilled
+  entities:
   - uid: 649
     components:
     - type: Transform
@@ -21969,11 +21979,6 @@ entities:
       parent: 4
 - proto: LockerSecurityFilled
   entities:
-  - uid: 950
-    components:
-    - type: Transform
-      pos: -23.5,15.5
-      parent: 4
   - uid: 951
     components:
     - type: Transform
@@ -25325,6 +25330,13 @@ entities:
     - type: Transform
       pos: -25.5,5.5
       parent: 4
+- proto: SpawnPointDetective
+  entities:
+  - uid: 4794
+    components:
+    - type: Transform
+      pos: -27.5,4.5
+      parent: 4
 - proto: SpawnPointHeadOfPersonnel
   entities:
   - uid: 4303
@@ -25406,6 +25418,13 @@ entities:
     components:
     - type: Transform
       pos: -23.5,0.5
+      parent: 4
+- proto: SpawnPointParamedic
+  entities:
+  - uid: 4795
+    components:
+    - type: Transform
+      pos: -25.5,-7.5
       parent: 4
 - proto: SpawnPointPassenger
   entities:
@@ -25531,6 +25550,16 @@ entities:
     components:
     - type: Transform
       pos: -28.5,3.5
+      parent: 4
+  - uid: 4792
+    components:
+    - type: Transform
+      pos: -27.5,-0.5
+      parent: 4
+  - uid: 4793
+    components:
+    - type: Transform
+      pos: -33.5,-9.5
       parent: 4
 - proto: SpawnPointStationEngineer
   entities:
@@ -26104,6 +26133,11 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -31.5,2.5
       parent: 4
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraGeneral
+      nameSet: True
+      id: The Tree
   - uid: 4344
     components:
     - type: Transform
@@ -26287,6 +26321,11 @@ entities:
       rot: 3.141592653589793 rad
       pos: -28.5,8.5
       parent: 4
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraService
+      nameSet: True
+      id: Kitchen/Bar
   - uid: 3771
     components:
     - type: Transform
@@ -26325,6 +26364,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -56.5,-34.5
       parent: 4
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraService
+      nameSet: True
+      id: Janitor
   - uid: 3955
     components:
     - type: Transform
@@ -26688,6 +26732,13 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -34.5,-4.5
+      parent: 4
+- proto: TableFancyBlack
+  entities:
+  - uid: 4796
+    components:
+    - type: Transform
+      pos: -36.5,-8.5
       parent: 4
 - proto: TableGlass
   entities:
@@ -27291,6 +27342,10 @@ entities:
         - Right: Reverse
         - Middle: Off
         3129:
+        - Left: Forward
+        - Right: Reverse
+        - Middle: Off
+        3131:
         - Left: Forward
         - Right: Reverse
         - Middle: Off
@@ -31099,6 +31154,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -28.5,-15.5
       parent: 4
+  - uid: 4791
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -6.5,-3.5
+      parent: 4
 - proto: WindoorSecureCommandLocked
   entities:
   - uid: 105
@@ -31685,6 +31746,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -39.5,4.5
       parent: 4
+  - uid: 4790
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -6.5,-3.5
+      parent: 4
 - proto: Wirecutter
   entities:
   - uid: 1864
@@ -31701,7 +31768,7 @@ entities:
       pos: -21.5,-9.5
       parent: 4
     - type: Door
-      secondsUntilStateChange: -3238.4055
+      secondsUntilStateChange: -4378.5254
       state: Opening
   - uid: 4677
     components:
@@ -31710,7 +31777,7 @@ entities:
       pos: -18.5,-9.5
       parent: 4
     - type: Door
-      secondsUntilStateChange: -3237.5056
+      secondsUntilStateChange: -4377.6255
       state: Opening
   - uid: 4697
     components:

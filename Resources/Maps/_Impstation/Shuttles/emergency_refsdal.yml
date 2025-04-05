@@ -309,6 +309,7 @@ entities:
       configurators: []
       deviceLists: []
       transmitFrequencyId: ShuttleTimer
+      deviceNetId: Wireless
 - proto: AirAlarm
   entities:
   - uid: 100
