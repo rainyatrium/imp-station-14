@@ -1367,6 +1367,7 @@
   parent: BaseWall
   id: WallMining
   name: mining wall
+  description: Rugged and heat-resistant. #imp
   components:
   - type: Tag
     tags:
@@ -1386,6 +1387,9 @@
   - type: IconSmooth
     key: walls
     base: mining
+  - type: Construction #imp
+    graph: Girder
+    node: miningWall
   - type: RandomIconSmooth
     randomStates:
     - mining
@@ -1402,6 +1406,9 @@
     snap:
     - Wall
   components:
+  - type: Construction
+    graph: Girder
+    node: diagonalMiningWall
   - type: Sprite
     drawdepth: Walls
     sprite: Structures/Walls/mining_diagonal.rsi
