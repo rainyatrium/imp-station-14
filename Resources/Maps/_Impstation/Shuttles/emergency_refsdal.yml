@@ -1273,8 +1273,6 @@ entities:
       pos: -5.5,0.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 100
   - uid: 268
@@ -1283,8 +1281,6 @@ entities:
       pos: -6.5,0.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 100
 - proto: GeneratorRTG
