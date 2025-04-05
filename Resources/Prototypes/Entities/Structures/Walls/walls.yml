@@ -1400,6 +1400,7 @@
 
 - type: entity
   parent: WallShuttleDiagonal
+  description: Rugged and heat-resistant. #imp
   id: WallMiningDiagonal
   name: mining wall
   suffix: diagonal
@@ -1408,7 +1409,7 @@
     snap:
     - Wall
   components:
-  - type: Construction
+  - type: Construction #imp
     graph: Girder
     node: diagonalMiningWall
   - type: Sprite

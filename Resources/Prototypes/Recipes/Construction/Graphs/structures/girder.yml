@@ -309,7 +309,7 @@
             - tool: Screwing
               doAfter: 1
 
-    - node: miningInteriorWall
+    - node: miningInteriorWall #imp
       entity: WallMiningInterior
       edges:
         - to: shuttleInteriorWall
@@ -602,7 +602,7 @@
             - tool: Cutting
               doAfter: 1
 
-    - node: miningWall
+    - node: miningWall #imp
       entity: WallMining
       edges:
         - to: shuttleWall
@@ -616,7 +616,7 @@
             - tool: Cutting
               doAfter: 1
 
-    - node: diagonalMiningWall
+    - node: diagonalMiningWall #imp
       entity: WallMiningDiagonal
       edges:
         - to: diagonalshuttleWall
