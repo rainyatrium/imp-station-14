@@ -1517,17 +1517,6 @@ entities:
     - type: Transform
       pos: -22.268255,5.5826817
       parent: 4
-- proto: ActionToggleLight
-  entities:
-  - uid: 739
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 749
-    - type: InstantAction
-      originalIconColor: '#FFFFFFFF'
-      container: 749
 - proto: AirAlarm
   entities:
   - uid: 456
@@ -13863,27 +13852,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -16.5,2.5
       parent: 4
-- proto: EmptyFlashlightLantern
-  entities:
-  - uid: 749
-    components:
-    - type: Transform
-      pos: -49.889404,-25.356976
-      parent: 4
-    - type: HandheldLight
-      toggleActionEntity: 739
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 739
-    - type: ActionsContainer
 - proto: ExosuitFabricator
   entities:
   - uid: 1836
