@@ -4,6 +4,8 @@
   name: mining wall
   suffix: Interior
   components:
+  - type: StaticPrice
+    price: 400
   - type: Tag
     tags:
       - Wall
