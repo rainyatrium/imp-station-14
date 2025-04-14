@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseItem ]
+  parent: [ BaseItem, TierXContraband ]
   id: CodexCicatrix
   name: codex cicatrix
-  description: An ominous book you've never seen before. The letters seem to be constantly rearranging themselves.
+  description: An ominous book you've never seen before. The letters seem to be contantly rearranging themselves.
   components:
   - type: Sprite
     sprite: _Goobstation/Heretic/book.rsi
@@ -24,21 +24,14 @@
     enabled: false
     radius: 2
     energy: 1
-    color: "#6e7500"    
+    color: "#6e7500"
     netsync: false
   - type: Appearance
   - type: ItemToggle
     predictable: false
-  - type: ItemToggleUserRestrict
-    restrictMessage: heretic-book-open-failure
-    closeRestrict: false
-    components:
-    - type: Heretic
   - type: ComponentToggler
     components:
     - type: HereticMagicItem
-    - type: Contraband
-      severity: TierXContraband
   - type: ItemTogglePointLight
   - type: ToggleableLightVisuals
   - type: ItemToggleSize

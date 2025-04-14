@@ -9,7 +9,7 @@ namespace Content.Shared.Store;
 /// <summary>
 ///     Specifies generic info for initializing a store.
 /// </summary>
-[Prototype]
+[Prototype("storePreset")]
 [DataDefinition]
 public sealed partial class StorePresetPrototype : IPrototype
 {

@@ -199,7 +199,6 @@
     - SurgeryStatic
     - ImpProtoStatic # Imp
     - ReportingStatic # DeltaV
-    - SteelBriefcaseImp # Imp
     dynamicPacks:
     - AdvancedTools
     - ScienceEquipment
@@ -408,7 +407,6 @@
     - SecurityPracticeStatic
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
-    - SteelBriefcaseImp # Imp
     dynamicPacks:
     - SecurityEquipment
     - SecurityBoards

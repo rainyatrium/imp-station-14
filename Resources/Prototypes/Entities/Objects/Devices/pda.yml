@@ -80,7 +80,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - NanoChatCartridge # DV
     - SOSCartridge # Imp
@@ -130,25 +129,6 @@
 
 - type: entity
   parent: BasePDA
-  id: BaseWidePDA
-  abstract: true
-  components:
-  - type: Sprite
-    sprite: Objects/Devices/pda.rsi
-    layers:
-    - map: [ "enum.PdaVisualLayers.Base" ]
-      state: "pda"
-    - state: "light_overlay_wide"
-      map: [ "enum.PdaVisualLayers.Flashlight" ]
-      shader: "unshaded"
-      visible: false
-    - state: "id_overlay_wide"
-      map: [ "enum.PdaVisualLayers.IdLight" ]
-      shader: "unshaded"
-      visible: false
-
-- type: entity
-  parent: BasePDA
   id: BaseSecurityPDA
   abstract: true
   components:
@@ -156,7 +136,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - WantedListCartridge
     - NanoChatCartridge # DV
@@ -171,7 +150,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - MedTekCartridge
     - NanoChatCartridge # DV
@@ -548,7 +526,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - AstroNavCartridge
     - NanoChatCartridge # DV
@@ -573,7 +550,7 @@
     state: pda-bartender
 
 - type: entity
-  parent: BaseWidePDA
+  parent: BasePDA
   id: LibrarianPDA
   name: librarian PDA
   description: Smells like books.
@@ -899,7 +876,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - WantedListCartridge
     - LogProbeCartridge
@@ -970,7 +946,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - MedTekCartridge
     - WantedListCartridge
@@ -998,7 +973,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - LogProbeCartridge
     - WantedListCartridge
@@ -1007,7 +981,6 @@
     - NanoChatCartridge # DV
     - StockTradingCartridge # DV
     - SOSCartridge # Imp
-
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
@@ -1138,7 +1111,6 @@
     uiKey: enum.PdaUiKey.Key
     preinstalled:
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NanoChatCartridge # DV
 
 - type: entity
@@ -1166,7 +1138,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - MedTekCartridge
     - WantedListCartridge
@@ -1346,7 +1317,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - WantedListCartridge
     - LogProbeCartridge
@@ -1376,7 +1346,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - WantedListCartridge
     - MedTekCartridge
@@ -1466,7 +1435,6 @@
     uiKey: enum.PdaUiKey.Key
     preinstalled:
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - MedTekCartridge
     - NanoChatCartridge # DV
 
@@ -1502,7 +1470,7 @@
         type: ChameleonBoundUserInterface
 
 - type: entity
-  parent: BaseWidePDA
+  parent: BasePDA
   id: WizardPDA
   name: wizard PDA
   description: You hear faint whispers coming from it.

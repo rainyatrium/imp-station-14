@@ -147,10 +147,9 @@ public abstract class SharedLayingDownSystem : EntitySystem
             !Resolve(uid, ref layingDown, false) ||
             standingState.CurrentState is not StandingState.Standing)
         {
-            if (behavior == DropHeldItemsBehavior.AlwaysDrop){
-                var ev = new DropHandItemsEvent();
-                RaiseLocalEvent(uid, ref ev);
-            }
+            if (behavior == DropHeldItemsBehavior.AlwaysDrop)
+                RaiseLocalEvent(uid, new DropHandItemsEvent());
+
             return false;
         }
 

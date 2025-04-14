@@ -6,7 +6,7 @@
   - type: StorageFill
     contents:
       - id: BoxSyringe
-      - id: ChemistryBottleEpinephrine
+      - id: EpinephrineChemistryBottle
         amount: 1
       - id: Brutepack
         amount: 2
@@ -25,7 +25,7 @@
   - type: StorageFill
     contents:
       - id: BoxSyringe
-      - id: ChemistryBottleEpinephrine
+      - id: EpinephrineChemistryBottle
         amount: 1
       - id: Brutepack
         amount: 2

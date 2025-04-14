@@ -21,7 +21,6 @@
     hideLayersOnEquip:
     - Hair
     - Snout
-    - FacialHair #imp
   - type: Inventory
     femaleDisplacements:
       jumpsuit:

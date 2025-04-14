@@ -2,8 +2,7 @@
   id: CuraDrobeInventory
   startingInventory:
     BooksBag: 2
-    BriefcaseBrown: 1 #imp
-    BriefcaseBlack: 1 #imp
+    BriefcaseBrown: 2
     HandLabeler: 2
     Cane: 3
     ClothingEyesGlasses: 2

@@ -7,8 +7,3 @@
   id: CameraBoardsImp
   recipes:
   - CameraHandheld
-
-- type: latheRecipePack
-  id: ScienceEquipmentImp
-  recipes:
-  - PortableSensorArray

@@ -1,6 +1,5 @@
 - type: entity
   id: InstantEffectVeryLocalKnockdown
-  suffix: "Very local knockdown"
   parent: AdminInstantEffectBase
   components:
   - type: StunOnTrigger
@@ -29,7 +28,6 @@
 
 - type: entity
   id: InstantEffectLocalKnockdown
-  suffix: "Local knockdown"
   parent: AdminInstantEffectBase
   components:
   - type: StunOnTrigger
@@ -460,7 +458,6 @@
 
 - type: entity
   id: InstantEffectGridKnockdown
-  suffix: "Gridwide knockdown"
   parent: AdminInstantEffectBase
   components:
   - type: StunOnTrigger
@@ -555,7 +552,7 @@
     spawns:
     - id: PortalSupermatter
     - id: SupermatterNoAnnouncementSpawner
-    - id: ArtifactWeakInstantEffectGravityWell
+    - id: AdminInstantEffectGravityWell
 
 - type: artifactEffect
   id: EffectMindlessClone

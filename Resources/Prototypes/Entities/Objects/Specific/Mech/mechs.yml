@@ -50,7 +50,6 @@
         Structural: 20
     soundHit:
       collection: MetalThud
-    canWideSwing: false #imp
   - type: Puller
     needsHands: false
   - type: InputMover

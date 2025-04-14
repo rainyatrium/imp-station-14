@@ -279,9 +279,9 @@
   description: A modified riot helmet. Oddly comfortable.
   components:
   - type: Sprite
-    sprite: _Impstation/Clothing/Head/Hardsuits/security-warden.rsi #Imp
+    sprite: Clothing/Head/Hardsuits/security-warden.rsi
   - type: Clothing
-    sprite: _Impstation/Clothing/Head/Hardsuits/security-warden.rsi #imp
+    sprite: Clothing/Head/Hardsuits/security-warden.rsi
   - type: PointLight
     color: "#ffeead"
   - type: PressureProtection

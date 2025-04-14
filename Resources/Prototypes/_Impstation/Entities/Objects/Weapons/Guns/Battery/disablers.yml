@@ -146,5 +146,3 @@
   - type: Battery
     maxCharge: 1050
     startingCharge: 1050
-  - type: MeleeWeapon
-    wideAnimationRotation: -80

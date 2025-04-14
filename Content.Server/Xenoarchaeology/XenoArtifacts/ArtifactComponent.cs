@@ -127,9 +127,8 @@ public sealed partial class ArtifactNode : ICloneable
 
     /// <summary>
     /// The trigger for the node
-    /// #IMP: added VVAccess.ReadWrite
     /// </summary>
-    [DataField("trigger", customTypeSerializer: typeof(PrototypeIdSerializer<ArtifactTriggerPrototype>), required: true)]
+    [DataField("trigger", customTypeSerializer: typeof(PrototypeIdSerializer<ArtifactTriggerPrototype>), required: true), ViewVariables]
     public string Trigger = default!;
 
     /// <summary>
@@ -140,20 +139,9 @@ public sealed partial class ArtifactNode : ICloneable
 
     /// <summary>
     /// The effect when the node is activated
-    /// #IMP: added VVAccess.ReadWrite
     /// </summary>
-    [DataField("effect", customTypeSerializer: typeof(PrototypeIdSerializer<ArtifactEffectPrototype>), required: true)]
+    [DataField("effect", customTypeSerializer: typeof(PrototypeIdSerializer<ArtifactEffectPrototype>), required: true), ViewVariables]
     public string Effect = default!;
-
-    /// <summary>
-    /// #IMP Save the trigger when node is entered, so if trigger for node changes (due to admin interference), the node can be properly exited
-    /// </summary>
-    public string StoredTrigger = default!;
-
-    /// <summary>
-    /// #IMP Save the effect when node is entered, so if effect for node changes (due to admin interference), the node can be properly exited
-    /// </summary>
-    public string StoredEffect = default!;
 
     /// <summary>
     /// Used for storing cumulative information about nodes
@@ -172,9 +160,7 @@ public sealed partial class ArtifactNode : ICloneable
             Trigger = Trigger,
             Triggered = Triggered,
             Effect = Effect,
-            NodeData = NodeData,
-            StoredTrigger = StoredTrigger,
-            StoredEffect = StoredEffect
+            NodeData = NodeData
         };
     }
 }

@@ -76,14 +76,11 @@ namespace Content.Server._Goobstation.Heretic.EntitySystems
                 {
                     //make sure they won't get into this loop again
                     victimComp.CleanupDone = true;
-                    if (victimComp.Mind != null) //if they ghosted before the gib, no need to return the hell mind to the body
-                    {
-                        //put them back in the original body
-                        _mind.TransferTo(victimComp.Mind.Value, victimComp.OriginalBody);
-                        //let them ghost again
-                        MindComponent? mindComp = Comp<MindComponent>(victimComp.Mind.Value);
-                        mindComp.PreventGhosting = false;
-                    }
+                    //put them back in the original body
+                    _mind.TransferTo(victimComp.Mind, victimComp.OriginalBody);
+                    //let them ghost again
+                    MindComponent? mindComp = Comp<MindComponent>(victimComp.Mind);
+                    mindComp.PreventGhosting = false;
                     //give the original body some visual changes
                     TransformVictim(uid);
                     //tell them about the metashield
@@ -126,12 +123,12 @@ namespace Content.Server._Goobstation.Heretic.EntitySystems
             var spawnTgt = Transform(newSpawn.Uid).Coordinates;
 
             //spawn your hellsona
-            if (!victimComp.HasMind || victimComp.Mind == null) //just in case the 
+            if (!victimComp.HasMind)
             {
                 victimComp.AlreadyHelled = true;
                 return;
             }
-            MindComponent? mindComp = Comp<MindComponent>(victimComp.Mind.Value);
+            MindComponent? mindComp = Comp<MindComponent>(victimComp.Mind);
             mindComp.PreventGhosting = true;
             //don't have to change this one's blood because nobody's bringing a forensic scanner to hell
             var sufferingWhiteBoy = Spawn(species.Prototype, spawnTgt);
@@ -144,7 +141,7 @@ namespace Content.Server._Goobstation.Heretic.EntitySystems
             }
 
             //and then send the mind into the hellsona
-            _mind.TransferTo(victimComp.Mind.Value, sufferingWhiteBoy);
+            _mind.TransferTo(victimComp.Mind, sufferingWhiteBoy);
             victimComp.AlreadyHelled = true;
 
             //returning the mind to the original body happens in Update()

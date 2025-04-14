@@ -1,36 +1,36 @@
 - type: jukebox
   id: FlipFlap
-  name: "Flip Flap // X-CEED" # imp stylings
+  name: X-CEED - Flip Flap
   path:
     path: /Audio/Jukebox/flip-flap.ogg
 
 - type: jukebox
   id: Tintin
-  name: "Tintin on the Moon // Jeroen Tel" # imp stylings
+  name: Jeroen Tel - Tintin on the Moon
   path:
     path: /Audio/Jukebox/title3.ogg
 
 - type: jukebox
   id: Thunderdome
-  name:  "Sector 11 // MashedByMachines" # imp stylings
+  name: MashedByMachines - Sector 11
   path:
     path: /Audio/Jukebox/sector11.ogg
 
 - type: jukebox
   id: Constellations
-  name: "Constellations // Qwertyquerty" # imp stylings
+  name: Qwertyquerty - Constellations
   path:
     path: /Audio/Jukebox/constellations.ogg
 
 - type: jukebox
   id: Drifting
-  name: "Drifting // Qwertyquerty" # imp stylings
+  name: Qwertyquerty - Drifting
   path:
     path: /Audio/Jukebox/drifting.ogg
 
 - type: jukebox
   id: Starlight
-  name: "Starlight // Qwertyquerty" # imp stylings
+  name: Qwertyquerty - Starlight
   path:
     path: /Audio/Jukebox/starlight.ogg
 

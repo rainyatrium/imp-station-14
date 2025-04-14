@@ -98,4 +98,3 @@ reagent-physical-desc-slimy = slimy
 reagent-physical-desc-neural = neural
 reagent-physical-desc-threat = threatening
 reagent-physical-desc-clear = clear
-reagent-physical-desc-unidentifiable = unidentifiable

@@ -11,7 +11,6 @@ using Content.Shared.Store;
 using Content.Shared.Store.Components;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
-using Robust.Shared.GameObjects;
 using System.Text;
 
 namespace Content.Server.GameTicking.Rules;
@@ -23,7 +22,6 @@ public sealed partial class ChangelingRuleSystem : GameRuleSystem<ChangelingRule
     [Dependency] private readonly SharedRoleSystem _role = default!;
     [Dependency] private readonly NpcFactionSystem _npcFaction = default!;
     [Dependency] private readonly ObjectivesSystem _objective = default!;
-    [Dependency] private readonly SharedUserInterfaceSystem _userInterfaceSystem = default!;
 
     public readonly SoundSpecifier BriefingSound = new SoundPathSpecifier("/Audio/_Goobstation/Ambience/Antag/changeling_start.ogg");
 
@@ -80,13 +78,6 @@ public sealed partial class ChangelingRuleSystem : GameRuleSystem<ChangelingRule
             store.Categories.Add(category);
         store.CurrencyWhitelist.Add(Currency);
         store.Balance.Add(Currency, changelingComp.MaxEvolutionPoints);
-
-        //#IMP: Make sure they can use the store button
-        var uiComp = EnsureComp<UserInterfaceComponent>(target);
-        if (!_userInterfaceSystem.HasUi(target, StoreUiKey.Key, uiComp))
-        {
-            _userInterfaceSystem.SetUi(target, StoreUiKey.Key, new InterfaceData("StoreBoundUserInterface"));
-        }
 
         rule.ChangelingMinds.Add(mindId);
 

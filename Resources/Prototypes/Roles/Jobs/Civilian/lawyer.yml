@@ -18,10 +18,10 @@
 - type: startingGear
   id: LawyerGear
   equipment:
-#    id: LawyerPDA # imp, PDAs moved to loadout
+    id: LawyerPDA
     ears: ClothingHeadsetLawyer # imp edit
-#  inhand: # imp, briefcases moved to loadout
-#    - BriefcaseBrownFilled
+  inhand:
+    - BriefcaseBrownFilled
   storage:
     back:
     - RubberStampLawyer

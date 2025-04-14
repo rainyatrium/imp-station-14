@@ -20,7 +20,6 @@
 ## Dynamic
 
 - type: latheRecipePack
-  parent: ScienceEquipmentImp #Imp
   id: ScienceEquipment
   recipes:
   - AnomalyScanner

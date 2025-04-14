@@ -1,7 +1,7 @@
 - type: cargoProduct
   id: SecurityShotgunNonLethal
   icon:
-    sprite: _Impstation/Objects/Weapons/Guns/Shotguns/beanbagpumptwo.rsi
+    sprite: _Impstation/Objects/Weapons/Guns/Shotguns/beanbagpump.rsi
     state: icon
   product: CrateSecurityShotgunNonlethal
   cost: 2000

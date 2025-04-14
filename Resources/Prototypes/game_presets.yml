@@ -60,6 +60,7 @@
   description: aller-at-once-description
   showInVote: false #Please god dont do this
   rules:
+    - CosmicCult
     - Nukeops
     - Traitor
     - Revolutionary
@@ -155,7 +156,6 @@
   description: traitor-description
   showInVote: false
   rules:
-    - DummyNonAntagChance
     - Traitor
     - SubGamemodesRule
     - BasicStationEventScheduler
@@ -174,7 +174,6 @@
   showInVote: false
   cooldown: 2
   rules:
-    - DummyNonAntagChance
     - SpyVsSpy
     - SleeperlessStationEventScheduler
     - MeteorSwarmScheduler
@@ -189,7 +188,6 @@
   showInVote: false
   cooldown: 2
   rules:
-    - DummyNonAntagChance
     - SpyVsSpy3TC
     - SleeperlessStationEventScheduler
     - MeteorSwarmScheduler
@@ -204,7 +202,6 @@
   description: secret-description
   showInVote: false #Admin Use
   rules:
-    - DummyNonAntagChance
     - SpyVsSpy
     - SleeperlessStationEventScheduler
     - MeteorSwarmScheduler
@@ -219,7 +216,6 @@
   description: secret-description
   showInVote: false #Admin Use
   rules:
-    - DummyNonAntagChance
     - SpyVsSpy3TC
     - SleeperlessStationEventScheduler
     - MeteorSwarmScheduler
@@ -249,14 +245,12 @@
   cooldown: 1
   rules:
     - Nukeops
-    - DummyNonAntagChance
     - SubGamemodesRule
     - BasicStationEventScheduler
     - MeteorSwarmScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
     - MidpopLimiter
-
 
 - type: gamePreset
   id: Revolutionary
@@ -268,7 +262,6 @@
   description: rev-description
   showInVote: false
   rules:
-    - DummyNonAntagChance
     - Revolutionary
     - SubGamemodesRule
     - BasicStationEventScheduler
@@ -286,7 +279,6 @@
   showInVote: false
   rules:
   - Wizard
-  - DummyNonAntagChance
   - SubGamemodesRuleNoWizard #No Dual Wizards at the start, midround is fine
   - BasicStationEventScheduler
   - MeteorSwarmScheduler

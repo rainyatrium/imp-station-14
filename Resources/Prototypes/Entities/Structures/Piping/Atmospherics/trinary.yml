@@ -35,9 +35,6 @@
   placement:
     mode: SnapgridCenter
   components:
-    - type: SubFloorHide
-      visibleLayers:
-      - enum.SubfloorLayers.FirstLayer
     - type: Sprite
       drawdepth: FloorObjects #imp
       sprite: Structures/Piping/Atmospherics/gasfilter.rsi
@@ -91,9 +88,6 @@
   placement:
     mode: SnapgridCenter
   components:
-  - type: SubFloorHide
-    visibleLayers:
-    - enum.SubfloorLayers.FirstLayer
   - type: Sprite
     drawdepth: FloorObjects #imp
     sprite: Structures/Piping/Atmospherics/gasfilter.rsi

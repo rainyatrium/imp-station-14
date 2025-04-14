@@ -25,11 +25,5 @@ namespace Content.Server.Atmos.Piping.Trinary.Components
 
         [DataField]
         public Gas? FilteredGas;
-
-        /// <summary>
-        /// Frontier - Enables the device on MapInit if set to true.
-        /// </summary>
-        [DataField]
-        public bool StartEnabled;
     }
 }

@@ -13,7 +13,6 @@
     - BypassInteractionRangeChecks
     - BypassDropChecks
     - NoConsoleSound
-    - SilentStorageUser
   - type: Input
     context: "aghost"
   - type: Ghost

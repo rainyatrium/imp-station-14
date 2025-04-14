@@ -1,5 +1,5 @@
 # These options are kept very sparse to not put emphasis on nudity, and to provide a base for players to feel comfortable with.
-# It's unlikely more will be added to upstream for cosmetic reasons.
+# It's unlikely more will be added to upstream for cosmetic reasons. 
 
 - type: marking
   id: UndergarmentBottomBoxers
@@ -11,7 +11,7 @@
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: boxers
 
 - type: marking
@@ -24,7 +24,7 @@
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: briefs
 
 - type: marking
@@ -37,7 +37,7 @@
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: satin
 
 - type: marking
@@ -50,7 +50,7 @@
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: classic
 
 - type: marking
@@ -58,13 +58,12 @@
   bodyPart: UndergarmentTop
   markingCategory: UndergarmentTop
   speciesRestriction: [Arachnid, Diona, Human, Dwarf, Moth, Reptilian, SlimePerson]
-  sexRestriction: [Male] #imp, can probably be removed (along with other versions) once marking displacements are merged - until then it causes clipping on female bodies
   coloring:
     default:
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: sports
 
 - type: marking
@@ -72,13 +71,12 @@
   bodyPart: UndergarmentTop
   markingCategory: UndergarmentTop
   speciesRestriction: [Arachnid, Diona, Human, Dwarf, Moth, Reptilian, SlimePerson]
-  sexRestriction: [Male] #imp, can probably be removed once marking displacements are merged - until then it causes clipping on female bodies
   coloring:
     default:
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: binder
 
 - type: marking
@@ -86,13 +84,12 @@
   bodyPart: UndergarmentTop
   markingCategory: UndergarmentTop
   speciesRestriction: [Arachnid, Diona, Human, Dwarf, Moth, Reptilian, SlimePerson]
-  sexRestriction: [Male] #imp, can probably be removed along with other versions once marking displacements are merged - until then it causes clipping on female bodies
   coloring:
     default:
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: tanktop
 
 - type: marking
@@ -105,7 +102,7 @@
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: boxers_vox
 
 - type: marking
@@ -118,7 +115,7 @@
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: briefs_vox
 
 - type: marking
@@ -131,7 +128,7 @@
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: satin_vox
 
 - type: marking
@@ -144,7 +141,7 @@
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: classic_vox
 
 - type: marking
@@ -157,7 +154,7 @@
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: sports_vox
 
 - type: marking
@@ -170,7 +167,7 @@
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: binder_vox
 
 - type: marking
@@ -183,7 +180,7 @@
       type: null
       fallbackColor: '#FFFFFF'
   sprites:
-  - sprite: _Impstation/Mobs/Customization/undergarments.rsi #imp
+  - sprite: Mobs/Customization/undergarments.rsi
     state: tanktop_vox
 
 - type: marking
