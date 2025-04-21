@@ -19,6 +19,11 @@
                                 HorizontalExpand="False"
                                 HorizontalAlignment="Right"
                                 StyleClasses="OpenRight"/>
+                        <OptionButton Name="ProgressOption"
+                                Text="{Loc 'bounty-console-label-button-text'}"
+                                HorizontalExpand="False"
+                                HorizontalAlignment="Right"
+                                StyleClasses="ButtonSquare"/>
                         <Button Name="SkipButton"
                                 Text="{Loc 'bounty-console-skip-button-text'}"
                                 HorizontalExpand="False"

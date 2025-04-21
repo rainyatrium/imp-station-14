@@ -19,6 +19,8 @@ public sealed partial class BountyEntry : BoxContainer
     public Action? OnLabelButtonPressed;
     public Action? OnSkipButtonPressed;
 
+    public Action? OnProgressOptionPressed; //imp
+
     public TimeSpan EndTime;
     public TimeSpan UntilNextSkip;
 
@@ -46,6 +48,16 @@ public sealed partial class BountyEntry : BoxContainer
 
         PrintButton.OnPressed += _ => OnLabelButtonPressed?.Invoke();
         SkipButton.OnPressed += _ => OnSkipButtonPressed?.Invoke();
+
+        //imp. current state: xaml has a dropdown but i am still learning how to make dropdowns work and also c# smile
+        ProgressOption.Clear();
+        ProgressOption.AddItem(Loc.GetString("lathe-menu-category-all"), -1);
+        foreach (var category in sortedCategories)
+        {
+            ProgressOption.AddItem(Loc.GetString(category.Name), Categories.IndexOf(category.ID));
+        }
+
+        ProgressOption.SelectId(-1);
     }
 
     private void UpdateSkipButton(float deltaSeconds)

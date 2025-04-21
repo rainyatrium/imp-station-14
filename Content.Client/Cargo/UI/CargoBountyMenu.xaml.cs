@@ -12,6 +12,9 @@ public sealed partial class CargoBountyMenu : FancyWindow
     public Action<string>? OnLabelButtonPressed;
     public Action<string>? OnSkipButtonPressed;
 
+    public Action<string>? OnProgressOptionPressed; //imp
+
+
     public CargoBountyMenu()
     {
         RobustXamlLoader.Load(this);
@@ -28,6 +31,7 @@ public sealed partial class CargoBountyMenu : FancyWindow
             var entry = new BountyEntry(b, untilNextSkip);
             entry.OnLabelButtonPressed += () => OnLabelButtonPressed?.Invoke(b.Id);
             entry.OnSkipButtonPressed += () => OnSkipButtonPressed?.Invoke(b.Id);
+            entry.OnProgressOptionPressed += () => OnProgressOptionPressed?.Invoke(b.Id); //imp
 
             BountyEntriesContainer.AddChild(entry);
         }
