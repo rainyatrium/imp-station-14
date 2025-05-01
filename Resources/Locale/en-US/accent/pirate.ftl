@@ -51,9 +51,8 @@ accent-pirate-replacement-15 = ahoy
 accent-pirate-replaced-16 = treasure
 accent-pirate-replacement-16 = booty
 
-#imp
-#accent-pirate-replaced-17 = attention
-#accent-pirate-replacement-17 = avast
+accent-pirate-replaced-17 = attention
+accent-pirate-replacement-17 = attention #imp
 
 accent-pirate-replaced-18 = stupid
 accent-pirate-replacement-18 = parrot-brained
