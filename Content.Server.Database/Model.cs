@@ -406,6 +406,9 @@ namespace Content.Server.Database
         public Guid UserId { get; set; }
         public int SelectedCharacterSlot { get; set; }
         public string AdminOOCColor { get; set; } = null!;
+
+        public string OOCColor { get; set; } = null!; // VDS
+
         public List<Profile> Profiles { get; } = new();
     }
 
