@@ -277,10 +277,18 @@ public abstract class SharedReplicatorNestSystem : EntitySystem
         if (_net.IsClient || !_timing.IsFirstTimePredicted)
             return;
 
+        if (ent.Comp.MyNest == null)
+        {
+            _popup.PopupEntity(Loc.GetString("replicator-cant-find-nest"), ent, PopupType.MediumCaution);
+            return;
+        }
+
         UpgradeReplicator(ent, 2);
 
         QueueDel(ent);
         QueueDel(args.Action);
+
+        _popup.PopupEntity(Loc.GetString("replicator-upgrade-t2-others"), ent, PopupType.MediumCaution);
     }
 
     public void OnUpgrade3(Entity<ReplicatorComponent> ent, ref ReplicatorUpgrade3ActionEvent args)
@@ -289,10 +297,18 @@ public abstract class SharedReplicatorNestSystem : EntitySystem
         if (_net.IsClient || !_timing.IsFirstTimePredicted)
             return;
 
+        if (ent.Comp.MyNest == null)
+        {
+            _popup.PopupEntity(Loc.GetString("replicator-cant-find-nest"), ent, PopupType.MediumCaution);
+            return;
+        }
+
         UpgradeReplicator(ent, 3);
 
         QueueDel(ent);
         QueueDel(args.Action);
+
+        _popup.PopupEntity(Loc.GetString("replicator-upgrade-t3-others"), ent, PopupType.MediumCaution);
     }
 
     public void UpgradeReplicator(Entity<ReplicatorComponent> ent, int desiredLevel)
@@ -306,6 +322,7 @@ public abstract class SharedReplicatorNestSystem : EntitySystem
         var upgradedComp = EnsureComp<ReplicatorComponent>(upgraded);
         upgradedComp.RelatedReplicators = ent.Comp.RelatedReplicators;
         upgradedComp.TargetUpgradeStage = ent.Comp.TargetUpgradeStage;
+        upgradedComp.MyNest = ent.Comp.MyNest;
 
         if (ent.Comp.MyNest != null)
         {
@@ -318,6 +335,9 @@ public abstract class SharedReplicatorNestSystem : EntitySystem
             return;
 
         _mind.TransferTo(mind, upgraded);
+
+        var messageSelf = desiredLevel == 2 ? "replicator-upgrade-t2-self" : "replicator-upgrade-t3-self";
+        _popup.PopupEntity(Loc.GetString(messageSelf), ent, PopupType.Medium);
 
         return;
     }
