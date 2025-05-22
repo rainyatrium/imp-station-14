@@ -45,7 +45,6 @@ namespace Content.Shared.Preferences
 
         public Color OOCColor { get; set; } // VDS
 
-
         public int IndexOfCharacter(ICharacterProfile profile)
         {
             return _characters.FirstOrNull(p => p.Value == profile)?.Key ?? -1;

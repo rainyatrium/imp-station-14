@@ -51,6 +51,10 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Jobs)
                 .Include(p => p.Profiles).ThenInclude(h => h.Antags)
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
+                // Begin VDS - OOC Color
+                .Include(p => p.VDSProfile)
+                .ThenInclude(v => v != null? v.OOCColor : null)
+                // End VDS - OOC Color
                 // Begin CD - Character Records
                 .Include(p => p.Profiles)
                 .ThenInclude(h => h.CDProfile)
@@ -73,7 +77,7 @@ namespace Content.Server.Database
                 profiles[profile.Slot] = ConvertProfiles(profile);
             }
 
-            return new PlayerPreferences(profiles, prefs.SelectedCharacterSlot, Color.FromHex(prefs.AdminOOCColor), Color.FromHex(prefs.AdminOOCColor));
+            return new PlayerPreferences(profiles, prefs.SelectedCharacterSlot, Color.FromHex(prefs.AdminOOCColor), Color.FromHex(prefs.VDSProfile?.OOCColor));
         }
 
         public async Task SaveSelectedCharacterIndexAsync(NetUserId userId, int index)
@@ -154,8 +158,7 @@ namespace Content.Server.Database
                 UserId = userId.UserId,
                 SelectedCharacterSlot = 0,
                 AdminOOCColor = Color.Red.ToHex(),
-                OOCColor = VCCVars.OOCColor.DefaultValue, // VDS
-
+                VDSProfile = new VDSModel.VDSProfile(), // VDS
             };
 
             prefs.Profiles.Add(profile);
@@ -164,7 +167,7 @@ namespace Content.Server.Database
 
             await db.DbContext.SaveChangesAsync();
 
-            return new PlayerPreferences(new[] {new KeyValuePair<int, ICharacterProfile>(0, defaultProfile)}, 0, Color.FromHex(prefs.AdminOOCColor), Color.FromHex(prefs.OOCColor));
+            return new PlayerPreferences(new[] {new KeyValuePair<int, ICharacterProfile>(0, defaultProfile)}, 0, Color.FromHex(prefs.AdminOOCColor), Color.FromHex(prefs.VDSProfile.OOCColor));
         }
 
         public async Task DeleteSlotAndSetSelectedIndex(NetUserId userId, int deleteSlot, int newSlot)
@@ -193,12 +196,13 @@ namespace Content.Server.Database
         public async Task SaveOOCColorAsync(NetUserId userId, Color color)
         {
             await using var db = await GetDb();
-            var prefs = await db.DbContext
+            var vdsPrefs = await db.DbContext
                 .Preference
-                .Include(p => p.Profiles)
+                .Include(p => p.VDSProfile)
+                .ThenInclude(v => v != null ? v.OOCColor : null)
                 .SingleAsync(p => p.UserId == userId.UserId);
-            prefs.OOCColor = color.ToHex();
-
+            if (vdsPrefs.VDSProfile != null)
+                vdsPrefs.VDSProfile.OOCColor = color.ToHex();
             await db.DbContext.SaveChangesAsync();
 
         }

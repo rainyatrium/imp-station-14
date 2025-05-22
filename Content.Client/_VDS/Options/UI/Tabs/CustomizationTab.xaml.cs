@@ -13,8 +13,13 @@ public sealed partial class CustomizationTab : Control
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
 
-        Control.AddOptionColorSlider(VCCVars.OOCColor, OOCColorSlider);
-
+        Control.AddOptionOOCColorSlider(VCCVars.OOCColor, OOCColorSlider);
+        OOCColorSlider.Slider.OnColorChanged += OnColorChanged;
         Control.Initialize();
+    }
+
+    private void OnColorChanged(Color color)
+    {
+        Control.ValueChanged();
     }
 }

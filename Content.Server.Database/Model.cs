@@ -53,6 +53,14 @@ namespace Content.Server.Database
                 .HasIndex(p => p.UserId)
                 .IsUnique();
 
+            // Begin VDS - VDS OOC Color
+            modelBuilder.Entity<VDSModel.VDSProfile>()
+                .HasOne(p => p.Preference)
+                .WithOne(p => p.VDSProfile)
+                .HasForeignKey<VDSModel.VDSProfile>(p => p.OOCColor)
+                .IsRequired();
+            // End VDS - VDS OOC Color
+
             modelBuilder.Entity<Profile>()
                 .HasIndex(p => new {p.Slot, PrefsId = p.PreferenceId})
                 .IsUnique();
@@ -407,8 +415,7 @@ namespace Content.Server.Database
         public int SelectedCharacterSlot { get; set; }
         public string AdminOOCColor { get; set; } = null!;
 
-        public string OOCColor { get; set; } = null!; // VDS
-
+        public VDSModel.VDSProfile? VDSProfile { get; set; } // VDS - OOC Color
         public List<Profile> Profiles { get; } = new();
     }
 
