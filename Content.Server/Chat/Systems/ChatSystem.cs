@@ -8,7 +8,6 @@ using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
 using Content.Server.Players.RateLimiting;
-using Content.Server.Preferences.Managers;
 using Content.Server.Speech.Prototypes;
 using Content.Server.Speech.EntitySystems;
 using Content.Server.Station.Components;
@@ -66,7 +65,6 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly ExamineSystemShared _examineSystem = default!;
     [Dependency] private readonly CollectiveMindUpdateSystem _collectiveMind = default!;
-    [Dependency] private readonly IServerPreferencesManager _preferencesManager = default!; // VDS
 
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
@@ -692,7 +690,6 @@ public sealed partial class ChatSystem : SharedChatSystem
     private void SendLOOC(EntityUid source, ICommonSession player, string message, bool hideChat)
     {
         var name = FormattedMessage.EscapeText(Identity.Name(source, EntityManager));
-        var color = _preferencesManager.GetPreferences(player.UserId).OOCColor;
 
         if (_adminManager.IsAdmin(player))
         {
@@ -706,7 +703,6 @@ public sealed partial class ChatSystem : SharedChatSystem
 
         var wrappedMessage = Loc.GetString("chat-manager-entity-looc-wrap-message",
             ("entityName", name),
-            ("oocColor", color ),
             ("message", FormattedMessage.EscapeText(message)));
 
         SendInVoiceRange(ChatChannel.LOOC, message, wrappedMessage, source, hideChat ? ChatTransmitRange.HideChat : ChatTransmitRange.Normal, player.UserId);
