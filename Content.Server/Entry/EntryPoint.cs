@@ -1,5 +1,3 @@
-using Content.Server._VDS.Chat.Managers;
-using Content.Server._VDS.IoC;
 using Content.Server.Acz;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
@@ -77,7 +75,6 @@ namespace Content.Server.Entry
             prototypes.RegisterIgnore("parallax");
 
             ServerContentIoC.Register();
-            VDSServerContentIoC.Register(); // VDS
 
             foreach (var callback in TestingCallbacks)
             {
@@ -120,7 +117,6 @@ namespace Content.Server.Entry
                 _watchlistWebhookManager.Initialize();
                 IoCManager.Resolve<JobWhitelistManager>().Initialize();
                 IoCManager.Resolve<PlayerRateLimitManager>().Initialize();
-                IoCManager.Resolve<IServerChatOOCColorManager>().Init(); // VDS
             }
         }
 
