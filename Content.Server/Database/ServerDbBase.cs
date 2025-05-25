@@ -66,6 +66,11 @@ namespace Content.Server.Database
             if (prefs is null)
                 return null;
 
+            if (prefs.OOCColor == string.Empty) // VDS - append OOCColor if empty just incase.
+            {
+                prefs.OOCColor = Color.Cyan.ToHex();
+            }
+
             var maxSlot = prefs.Profiles.Max(p => p.Slot) + 1;
             var profiles = new Dictionary<int, ICharacterProfile>(maxSlot);
             foreach (var profile in prefs.Profiles)
