@@ -153,7 +153,7 @@ namespace Content.Server.Database
                 UserId = userId.UserId,
                 SelectedCharacterSlot = 0,
                 AdminOOCColor = Color.Red.ToHex(),
-                OOCColor = VCCVars.OOCColor.DefaultValue,
+                OOCColor = Color.LightCyan.ToHex(),
             };
             prefs.Profiles.Add(profile);
             db.DbContext.Preference.Add(prefs);
