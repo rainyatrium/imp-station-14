@@ -8,7 +8,7 @@
             <Label Text="{Loc 'ui-options-general-forknotice'}"
                    FontColorOverride="{xNamespace:Static s:StyleNano.ConcerningOrangeFore}"
                    StyleClasses="LabelKeyText"/>
-            <Label Text="{Loc 'ui-options-general-accessibility'}"
+            <Label Text="{Loc 'vds-ui-options-header-colors'}"
                    FontColorOverride="{xNamespace:Static s:StyleNano.NanoGold}"
                    StyleClasses="LabelKeyText"/>
             <ui:OptionColorSlider Name="OOCColorSlider"

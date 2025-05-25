@@ -5,7 +5,6 @@ namespace Content.Client.Options.UI;
 
 public sealed partial class OptionsTabControlRow
 {
-    // TODO: comment details about all this later im tired
     public OptionOOCColorSlider AddOptionOOCColorSlider(
         CVarDef<string> cVar,
         OptionColorSlider slider)

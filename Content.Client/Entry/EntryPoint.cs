@@ -1,3 +1,4 @@
+using Content.Client._VDS.Chat.Managers;
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
@@ -9,6 +10,7 @@ using Content.Client.GhostKick;
 using Content.Client.Guidebook;
 using Content.Client.Input;
 using Content.Client.IoC;
+using Content.Client._VDS.IoC;
 using Content.Client.Launcher;
 using Content.Client.Lobby;
 using Content.Client.MainMenu;
@@ -72,10 +74,12 @@ namespace Content.Client.Entry
         [Dependency] private readonly ILogManager _logManager = default!;
         [Dependency] private readonly DebugMonitorManager _debugMonitorManager = default!;
         [Dependency] private readonly TitleWindowManager _titleWindowManager = default!;
+        [Dependency] private readonly IClientChatOOCColorManager _oocColorManager = default!; // VDS
 
         public override void Init()
         {
             ClientContentIoC.Register();
+            VDSClientContentIoC.Register(); // VDS
 
             foreach (var callback in TestingCallbacks)
             {
@@ -168,6 +172,7 @@ namespace Content.Client.Entry
             _userInterfaceManager.SetActiveTheme(_configManager.GetCVar(CVars.InterfaceTheme));
             _documentParsingManager.Initialize();
             _titleWindowManager.Initialize();
+            _oocColorManager.Initialize(); // VDS
 
             _baseClient.RunLevelChanged += (_, args) =>
             {

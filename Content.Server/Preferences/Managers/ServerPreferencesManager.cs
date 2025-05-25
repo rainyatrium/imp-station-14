@@ -177,7 +177,7 @@ namespace Content.Server.Preferences.Managers
                     PrefsLoaded = true,
                     Prefs = new PlayerPreferences(
                         new[] {new KeyValuePair<int, ICharacterProfile>(0, HumanoidCharacterProfile.Random())},
-                        0, Color.Transparent, Color.Transparent)
+                        0, Color.Transparent, Color.Transparent),
                 };
 
                 _cachedPlayerPrefs[session.UserId] = prefsData;
