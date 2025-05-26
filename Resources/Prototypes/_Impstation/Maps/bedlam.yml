@@ -2,7 +2,11 @@
   id: Bedlam
   mapName: 'Bedlam'
   mapPath: /Maps/_Impstation/bedlam.yml
+<<<<<<< HEAD
   minPlayers: 0
+=======
+  minPlayers: 7
+>>>>>>> 1b26e76a7723d23cf2d0971278271c01471d4a29
   maxPlayers: 25
   stations:
     Bedlam:
@@ -40,7 +44,10 @@
             Chaplain: [1, 1]
             Librarian: [1, 1]
             Reporter: [1, 1]
+<<<<<<< HEAD
             ServiceWorker: [2, 2]
+=======
+>>>>>>> 1b26e76a7723d23cf2d0971278271c01471d4a29
             # engineering
             AtmosphericTechnician: [ 2, 2 ]
             StationEngineer: [ 2, 2 ]
