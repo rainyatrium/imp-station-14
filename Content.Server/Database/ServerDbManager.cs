@@ -42,6 +42,8 @@ namespace Content.Server.Database
 
         Task SaveAdminOOCColorAsync(NetUserId userId, Color color);
 
+        Task SaveOOCColorAsync(NetUserId userId, Color color); // VDS
+
         // Single method for two operations for transaction.
         Task DeleteSlotAndSetSelectedIndex(NetUserId userId, int deleteSlot, int newSlot);
         Task<PlayerPreferences?> GetPlayerPreferencesAsync(NetUserId userId, CancellationToken cancel);
@@ -486,7 +488,13 @@ namespace Content.Server.Database
             DbWriteOpsMetric.Inc();
             return RunDbCommand(() => _db.SaveAdminOOCColorAsync(userId, color));
         }
-
+        // Begin VDS - OOC Color
+        public Task SaveOOCColorAsync(NetUserId userId, Color color)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.SaveOOCColorAsync(userId, color));
+        }
+        // End VDS - OOC Color
         public Task<PlayerPreferences?> GetPlayerPreferencesAsync(NetUserId userId, CancellationToken cancel)
         {
             DbReadOpsMetric.Inc();
