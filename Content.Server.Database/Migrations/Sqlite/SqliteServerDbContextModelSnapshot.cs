@@ -15,7 +15,7 @@ namespace Content.Server.Database.Migrations.Sqlite
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "8.0.0");
+            modelBuilder.HasAnnotation("ProductVersion", "9.0.1");
 
             modelBuilder.Entity("Content.Server.Database.Admin", b =>
                 {
@@ -264,8 +264,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("expiration_time");
 
-                    b.Property<DateTime?>("LastEditedAt")
-                        .IsRequired()
+                    b.Property<DateTime>("LastEditedAt")
                         .HasColumnType("TEXT")
                         .HasColumnName("last_edited_at");
 
@@ -393,8 +392,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("expiration_time");
 
-                    b.Property<DateTime?>("LastEditedAt")
-                        .IsRequired()
+                    b.Property<DateTime>("LastEditedAt")
                         .HasColumnType("TEXT")
                         .HasColumnName("last_edited_at");
 
@@ -547,7 +545,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.ToTable("blacklist", (string)null);
                 });
 
-                        modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
+            modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -820,6 +818,11 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("admin_ooc_color");
+
+                    b.Property<string>("OOCColor")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("ooccolor");
 
                     b.Property<int>("SelectedCharacterSlot")
                         .HasColumnType("INTEGER")
@@ -1650,30 +1653,29 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("Profile");
                 });
 
-
             modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
-            {
-                b.HasOne("Content.Server.Database.Profile", "Profile")
-                    .WithOne("CDProfile")
-                    .HasForeignKey("Content.Server.Database.CDModel+CDProfile", "ProfileId")
-                    .OnDelete(DeleteBehavior.Cascade)
-                    .IsRequired()
-                    .HasConstraintName("FK_cdprofile_profile_profile_id");
+                {
+                    b.HasOne("Content.Server.Database.Profile", "Profile")
+                        .WithOne("CDProfile")
+                        .HasForeignKey("Content.Server.Database.CDModel+CDProfile", "ProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_cdprofile_profile_profile_id");
 
-                b.Navigation("Profile");
-            });
+                    b.Navigation("Profile");
+                });
 
             modelBuilder.Entity("Content.Server.Database.CDModel+CharacterRecordEntry", b =>
-            {
-                b.HasOne("Content.Server.Database.CDModel+CDProfile", "CDProfile")
-                    .WithMany("CharacterRecordEntries")
-                    .HasForeignKey("CDProfileId")
-                    .OnDelete(DeleteBehavior.Cascade)
-                    .IsRequired()
-                    .HasConstraintName("FK_cd_character_record_entries_cdprofile_cdprofile_id");
+                {
+                    b.HasOne("Content.Server.Database.CDModel+CDProfile", "CDProfile")
+                        .WithMany("CharacterRecordEntries")
+                        .HasForeignKey("CDProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_cd_character_record_entries_cdprofile_cdprofile_id");
 
-                b.Navigation("CDProfile");
-            });
+                    b.Navigation("CDProfile");
+                });
 
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
                 {
@@ -2035,9 +2037,9 @@ namespace Content.Server.Database.Migrations.Sqlite
                 });
 
             modelBuilder.Entity("Content.Server.Database.CDModel+CDProfile", b =>
-            {
-                b.Navigation("CharacterRecordEntries");
-            });
+                {
+                    b.Navigation("CharacterRecordEntries");
+                });
 
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
                 {

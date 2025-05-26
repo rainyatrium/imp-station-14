@@ -12,12 +12,12 @@ namespace Content.Shared.Preferences
     public sealed class PlayerPreferences
     {
         private Dictionary<int, ICharacterProfile> _characters;
-
-        public PlayerPreferences(IEnumerable<KeyValuePair<int, ICharacterProfile>> characters, int selectedCharacterIndex, Color adminOOCColor)
+        public PlayerPreferences(IEnumerable<KeyValuePair<int, ICharacterProfile>> characters, int selectedCharacterIndex, Color adminOOCColor, Color oocColor)
         {
             _characters = new Dictionary<int, ICharacterProfile>(characters);
             SelectedCharacterIndex = selectedCharacterIndex;
             AdminOOCColor = adminOOCColor;
+            OOCColor = oocColor;
         }
 
         /// <summary>
@@ -41,6 +41,8 @@ namespace Content.Shared.Preferences
         public ICharacterProfile SelectedCharacter => Characters[SelectedCharacterIndex];
 
         public Color AdminOOCColor { get; set; }
+
+        public Color OOCColor { get; set; } // VDS
 
         public int IndexOfCharacter(ICharacterProfile profile)
         {
