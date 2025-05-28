@@ -66,7 +66,7 @@ namespace Content.Server.Database
             if (prefs is null)
                 return null;
 
-            if (prefs.OOCColor == string.Empty) // VDS - append OOCColor if empty just incase.
+            if (string.IsNullOrEmpty(prefs.OOCColor)) // VDS - append OOCColor if empty just incase.
             {
                 prefs.OOCColor = Color.Cyan.ToHex();
             }
@@ -158,7 +158,7 @@ namespace Content.Server.Database
                 UserId = userId.UserId,
                 SelectedCharacterSlot = 0,
                 AdminOOCColor = Color.Red.ToHex(),
-                OOCColor = Color.LightCyan.ToHex(),
+                OOCColor = Color.Cyan.ToHex(),
             };
             prefs.Profiles.Add(profile);
             db.DbContext.Preference.Add(prefs);
