@@ -24,7 +24,7 @@ If you do wish to contribute to Vermist in particular, our PR guidelines are pre
 
 If you are adding completely custom content that would go into the normal SS14 file structure in a certain spot, add that content to the `_VDS` folder with that same file path instead. For example, when adding the `ServerChatOOCColorManager.cs` chat manager for OOC color stuff, it would have gone in `Content.Server/Chat/Managers`. Instead, the `ServerChatOOCColorManager.cs` file is in `Content.Server/_VDS/Chat/Managers`.
 
-The Vermist Dust Sector folders are located at `Content.Client/_VDS`, `Content.Server/_VDS`, and `Content.Shared/_VDS`. The Resources folder is kind of its own beast, and has a lot of depth. For that reason it makes sense to have the _VDS folder inside of the subfolder it is modifying. As another example, the main prototypes folder for our  custom content is located in `Resources/Prototypes/_VDS`. This applies for recipies, clothing, everything.
+The Vermist Dust Sector folders are located at `Content.Client/_VDS`, `Content.Server/_VDS`, and `Content.Shared/_VDS`. The Resources folder is kind of its own beast, and has a lot of depth. For that reason it makes sense to have the _VDS folder inside the subfolder it is modifying. As another example, the main prototypes folder for our custom content is located in `Resources/Prototypes/_VDS`. This applies for recipes, clothing, everything.
 
 Keeping things defined like this makes the lives of the people maintaining the server much, much easier.
 
@@ -55,16 +55,16 @@ When we pull content from other forks, we try to organize their content to their
 
 Content under these subdirectories either originate from their respective fork, or are modifications related to content from their respective fork.
 
-| Subdirectory     | Fork Name           | Fork Repository | License |
-|------------------|---------------------|-----------------|---------|
-| `_VDS`           | Vermist Dust Sector | https://github.com/vermist-sector/vermist-dust | AGPL 3.0 |
-| `_Impstation`    | Impstation          | https://github.com/impstation/imp-station-14/ | AGPL 3.0 |
-| `_CD`            | Cosmatic Drift      | https://github.com/cosmatic-drift-14/cosmatic-drift | MIT |
-| `_Corvax`        | Corvax              | https://github.com/space-syndicate/space-station-14 | MIT |
-| `_DV`            | Delta-V             | https://github.com/DeltaV-Station/Delta-v/ | AGPL 3.0 |
-| `_EE`            | Einstein Engines    | https://github.com/Simple-Station/Einstein-Engines/ | AGPL 3.0 |
-| `_EstacaoPirata` | Estacao Pirata      | https://github.com/Day-OS/estacao-pirata-14/ | AGPL 3.0 |
-| `_Goobstation`   | Goob Station        | https://github.com/Goob-Station/Goob-Station/ | AGPL 3.0 |
-| `_Harmony`       | Harmony             | https://github.com/ss14-harmony/ss14-harmony | AGPL 3.0 |
+| Subdirectory     | Fork Name           | Fork Repository                                         | License  |
+|------------------|---------------------|---------------------------------------------------------|----------|
+| `_VDS`           | Vermist Dust Sector | https://github.com/vermist-sector/vermist-dust          | AGPL 3.0 |
+| `_Impstation`    | Impstation          | https://github.com/impstation/imp-station-14/           | AGPL 3.0 |
+| `_CD`            | Cosmatic Drift      | https://github.com/cosmatic-drift-14/cosmatic-drift     | MIT      |
+| `_Corvax`        | Corvax              | https://github.com/space-syndicate/space-station-14     | MIT      |
+| `_DV`            | Delta-V             | https://github.com/DeltaV-Station/Delta-v/              | AGPL 3.0 |
+| `_EE`            | Einstein Engines    | https://github.com/Simple-Station/Einstein-Engines/     | AGPL 3.0 |
+| `_EstacaoPirata` | Estacao Pirata      | https://github.com/Day-OS/estacao-pirata-14/            | AGPL 3.0 |
+| `_Goobstation`   | Goob Station        | https://github.com/Goob-Station/Goob-Station/           | AGPL 3.0 |
+| `_Harmony`       | Harmony             | https://github.com/ss14-harmony/ss14-harmony            | AGPL 3.0 |
 | `_NF`            | Frontier Station    | https://github.com/new-frontiers-14/frontier-station-14 | AGPL 3.0 |
-| `_White`         | White Dream         | https://github.com/WWhiteDreamProject/wwdpublic/ | AGPL 3.0 |
+| `_White`         | White Dream         | https://github.com/WWhiteDreamProject/wwdpublic/        | AGPL 3.0 |
