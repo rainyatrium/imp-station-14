@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Content.Server.Database.Migrations.Sqlite
 {
     [DbContext(typeof(SqliteServerDbContext))]
-    [Migration("20250525212522_OOCColor")]
+    [Migration("20250527224205_OOCColor")]
     partial class OOCColor
     {
         /// <inheritdoc />
