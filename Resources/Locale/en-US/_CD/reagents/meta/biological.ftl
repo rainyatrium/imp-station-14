@@ -1,2 +1,2 @@
-reagent-name-synth-blood = synth blood
-reagent-desc-synth-blood = Not quite coolant, not quite blue powerade.
+reagent-name-synth-blood = synthblood
+reagent-desc-synth-blood = Silvery synthetic blood. It glints efficiently in the light.
