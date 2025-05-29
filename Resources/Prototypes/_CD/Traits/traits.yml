@@ -8,8 +8,7 @@
     components:
       - Silicon
       - BorgChassis
-  excludedSpecies:
-    - IPC
   # End DeltaV Additions - blacklist IPCs
+  # Imp - removed IPCs from excludedSpecies as they are not real here
   components:
     - type: Synth
