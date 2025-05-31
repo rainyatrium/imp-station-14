@@ -2,7 +2,7 @@
   id: CentComm
   isGrid: true # Did you know that centcomm is the only "game map" that isn't actually a map? Send help.
   mapName: 'Central Command'
-  mapPath: /Maps/centcomm.yml
+  mapPath: /Maps/_VDS/vds_centcomm.yml #vds. cleaner way to do this? todo!
   minPlayers: 10
   stations:
     centcomm:
