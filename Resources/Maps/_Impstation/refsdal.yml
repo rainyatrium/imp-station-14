@@ -4,8 +4,8 @@ meta:
   engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/13/2025 21:23:11
-  entityCount: 5313
+  time: 05/31/2025 21:02:52
+  entityCount: 5320
 maps:
 - 1
 grids:
@@ -626,13 +626,14 @@ entities:
             id: OldConcreteTrimInnerNw
           decals:
             674: -32,-1
-            675: -33,-2
+            970: -33,-2
         - node:
             color: '#FFFFFFFF'
             id: OldConcreteTrimInnerSe
           decals:
             520: -36,14
             603: -36,1
+            971: -35,2
         - node:
             color: '#FFFFFFFF'
             id: OldConcreteTrimInnerSw
@@ -645,7 +646,7 @@ entities:
           decals:
             518: -36,13
             519: -36,12
-            715: -36,0
+            969: -36,0
         - node:
             color: '#FFFFFFFF'
             id: OldConcreteTrimLineN
@@ -1150,16 +1151,6 @@ entities:
           decals:
             397: -52.76985,31.235725
         - node:
-            color: '#791500FF'
-            id: c-stationtext
-          decals:
-            700: -35.13036,2.3825233
-        - node:
-            color: '#A14FE3FF'
-            id: c-stationtext
-          decals:
-            698: -35.75219,2.37465
-        - node:
             cleanable: True
             color: '#FFFFFFFF'
             id: d
@@ -1167,11 +1158,6 @@ entities:
             391: -52.3011,31.798225
             395: -50.754227,31.4076
             413: -52.103073,29.527227
-        - node:
-            color: '#334E6DFF'
-            id: d-stationtext
-          decals:
-            682: -32.62762,-2.3793747
         - node:
             cleanable: True
             color: '#CFAB08FF'
@@ -1196,21 +1182,6 @@ entities:
             390: -52.660477,31.891975
             402: -51.088207,30.766975
             417: -51.71245,28.855352
-        - node:
-            color: '#334E6DFF'
-            id: e-stationtext
-          decals:
-            681: -32.753563,-2.3793747
-        - node:
-            color: '#791500FF'
-            id: e-stationtext
-          decals:
-            701: -35.252365,2.3825233
-        - node:
-            color: '#B7993EFF'
-            id: e-stationtext
-          decals:
-            709: -36.405132,0.12303543
         - node:
             cleanable: True
             color: '#FFFFFFFF'
@@ -1254,11 +1225,6 @@ entities:
             410: -53.3687,29.761602
             414: -52.9937,28.995977
         - node:
-            color: '#B7993EFF'
-            id: g-stationtext
-          decals:
-            711: -36.15325,0.12697202
-        - node:
             cleanable: True
             color: '#FFFFFFFF'
             id: heart
@@ -1288,11 +1254,6 @@ entities:
           decals:
             399: -51.972977,30.923225
         - node:
-            color: '#A14FE3FF'
-            id: i-stationtext
-          decals:
-            699: -35.62625,2.37465
-        - node:
             color: '#FFFFFFFF'
             id: k
           decals:
@@ -1314,11 +1275,6 @@ entities:
             398: -52.33235,31.06385
             416: -52.228073,28.855352
         - node:
-            color: '#334E6DFF'
-            id: m-stationtext
-          decals:
-            680: -32.8795,-2.3793747
-        - node:
             color: '#FFFFFFFF'
             id: n
           decals:
@@ -1331,27 +1287,12 @@ entities:
             394: -51.20735,31.4701
             403: -50.744457,30.7201
         - node:
-            color: '#B7993EFF'
-            id: n-stationtext
-          decals:
-            710: -36.27919,0.12303543
-        - node:
             cleanable: True
             color: '#FFFFFFFF'
             id: o
           decals:
             411: -52.9937,29.636602
             412: -52.634323,29.542852
-        - node:
-            color: '#52B4E9FF'
-            id: o-stationtext
-          decals:
-            712: -36.405132,-0.11709851
-        - node:
-            color: '#A46106FF'
-            id: p-stationtext
-          decals:
-            677: -32.11599,-2.3754385
         - node:
             cleanable: True
             color: '#CFAB08FF'
@@ -1375,21 +1316,6 @@ entities:
           decals:
             408: -52.478073,30.558477
         - node:
-            color: '#791500FF'
-            id: s-stationtext
-          decals:
-            702: -35.37437,2.3825233
-        - node:
-            color: '#A14FE3FF'
-            id: s-stationtext
-          decals:
-            697: -35.878128,2.3785868
-        - node:
-            color: '#A46106FF'
-            id: s-stationtext
-          decals:
-            679: -32.371807,-2.3754385
-        - node:
             cleanable: True
             color: '#FFFFFFFF'
             id: shortline
@@ -1401,26 +1327,11 @@ entities:
           decals:
             538: -47.641045,-26.244493
         - node:
-            color: '#52B4E9FF'
-            id: t-stationtext
-          decals:
-            714: -36.15719,-0.1210351
-        - node:
             cleanable: True
             color: '#FFFFFFFF'
             id: u
           decals:
             393: -51.4886,31.5326
-        - node:
-            color: '#52B4E9FF'
-            id: u-stationtext
-          decals:
-            713: -36.283127,-0.12497169
-        - node:
-            color: '#A46106FF'
-            id: u-stationtext
-          decals:
-            678: -32.241932,-2.3754385
         - node:
             cleanable: True
             color: '#727272FF'
@@ -1654,7 +1565,8 @@ entities:
           -7,4:
             1: 882
           -6,1:
-            1: 61695
+            1: 61687
+            2: 8
           -6,2:
             1: 52031
           -6,3:
@@ -1966,6 +1878,21 @@ entities:
           moles:
           - 21.824879
           - 82.10312
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 21.6852
+          - 81.57766
           - 0
           - 0
           - 0
@@ -2525,7 +2452,7 @@ entities:
       pos: -15.5,0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -90743.17
+      secondsUntilStateChange: -91473.71
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2537,7 +2464,7 @@ entities:
       pos: -15.5,-0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -90741.875
+      secondsUntilStateChange: -91472.414
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2549,7 +2476,7 @@ entities:
       pos: -15.5,1.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -90745.77
+      secondsUntilStateChange: -91476.31
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2566,7 +2493,7 @@ entities:
       pos: -42.5,24.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -38678.777
+      secondsUntilStateChange: -39409.32
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2606,7 +2533,7 @@ entities:
       pos: -33.5,17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -26570.781
+      secondsUntilStateChange: -27301.322
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11582,13 +11509,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -28.5,-8.5
       parent: 2
-- proto: Chair
-  entities:
-  - uid: 1658
-    components:
-    - type: Transform
-      pos: -40.5,-8.5
-      parent: 2
 - proto: ChairBrass
   entities:
   - uid: 1659
@@ -12576,6 +12496,42 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -38.32734,6.1279774
       parent: 2
+- proto: ClothingHandsGlovesBoxingBlue
+  entities:
+  - uid: 2055
+    components:
+    - type: Transform
+      parent: 1882
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: ClothingHandsGlovesBoxingGreen
+  entities:
+  - uid: 1658
+    components:
+    - type: Transform
+      parent: 1882
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: ClothingHandsGlovesBoxingRed
+  entities:
+  - uid: 1962
+    components:
+    - type: Transform
+      parent: 1882
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: ClothingHandsGlovesBoxingYellow
+  entities:
+  - uid: 2134
+    components:
+    - type: Transform
+      parent: 1882
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ClothingHandsGlovesColorYellowBudget
   entities:
   - uid: 1814
@@ -13340,14 +13296,28 @@ entities:
     - type: Transform
       pos: -20.5,4.5
       parent: 2
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 1658
+          - 1962
+          - 2055
+          - 2134
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
     - type: EntityStorage
       air:
         volume: 200
         immutable: False
         temperature: 293.14673
         moles:
-        - 1.7459903
-        - 6.568249
+        - 1.8856695
+        - 7.0937095
         - 0
         - 0
         - 0
@@ -13621,7 +13591,7 @@ entities:
       pos: -17.5,-6.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -88882.77
+      secondsUntilStateChange: -89613.31
       state: Closing
   - uid: 1906
     components:
@@ -13648,7 +13618,7 @@ entities:
       pos: -25.5,-10.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -7506.706
+      secondsUntilStateChange: -8237.248
       state: Opening
   - uid: 1910
     components:
@@ -14083,12 +14053,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -32.5,15.5
       parent: 2
-  - uid: 1962
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -41.5,-9.5
-      parent: 2
   - uid: 1963
     components:
     - type: Transform
@@ -14269,6 +14233,12 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -37.5,12.5
+      parent: 2
+  - uid: 5314
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -40.5,-9.5
       parent: 2
 - proto: DisposalJunction
   entities:
@@ -14616,12 +14586,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -39.5,-9.5
-      parent: 2
-  - uid: 2055
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -40.5,-9.5
       parent: 2
   - uid: 2056
     components:
@@ -15067,11 +15031,6 @@ entities:
     - type: Transform
       pos: -38.5,-6.5
       parent: 2
-  - uid: 2134
-    components:
-    - type: Transform
-      pos: -41.5,-8.5
-      parent: 2
   - uid: 2135
     components:
     - type: Transform
@@ -15141,8 +15100,18 @@ entities:
       rot: 3.141592653589793 rad
       pos: -33.5,-1.5
       parent: 2
+  - uid: 3232
+    components:
+    - type: Transform
+      pos: -40.5,-8.5
+      parent: 2
 - proto: DisposalUnit
   entities:
+  - uid: 1555
+    components:
+    - type: Transform
+      pos: -40.5,-8.5
+      parent: 2
   - uid: 2148
     components:
     - type: Transform
@@ -15197,11 +15166,6 @@ entities:
     components:
     - type: Transform
       pos: -35.5,-1.5
-      parent: 2
-  - uid: 3232
-    components:
-    - type: Transform
-      pos: -41.5,-8.5
       parent: 2
 - proto: DisposalYJunction
   entities:
@@ -26587,11 +26551,6 @@ entities:
       parent: 2
 - proto: Rack
   entities:
-  - uid: 1555
-    components:
-    - type: Transform
-      pos: -36.5,9.5
-      parent: 2
   - uid: 1556
     components:
     - type: Transform
@@ -27122,12 +27081,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -11.5,-6.5
       parent: 2
-  - uid: 3561
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -12.5,9.5
-      parent: 2
 - proto: RandomPosterAny
   entities:
   - uid: 3562
@@ -27625,8 +27578,7 @@ entities:
   - uid: 2700
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -39.59418,7.037035
+      pos: -39.487255,7.050807
       parent: 2
   - uid: 3611
     components:
@@ -27650,8 +27602,7 @@ entities:
   - uid: 832
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -36.401134,9.512032
+      pos: -36.508743,8.648251
       parent: 2
   - uid: 1784
     components:
@@ -28359,6 +28310,30 @@ entities:
       rot: 3.141592653589793 rad
       pos: -28.494791,4.3913083
       parent: 2
+- proto: SignDirectionalBridge
+  entities:
+  - uid: 5321
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -30.498789,-1.0929875
+      parent: 2
+- proto: SignDirectionalEng
+  entities:
+  - uid: 3795
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -36.497295,2.1346838
+      parent: 2
+- proto: SignDirectionalEvac
+  entities:
+  - uid: 5320
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -36.497295,-1.1071231
+      parent: 2
 - proto: SignDirectionalFood
   entities:
   - uid: 3647
@@ -28366,6 +28341,12 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -28.492191,4.5741715
+      parent: 2
+  - uid: 5319
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -30.507645,2.1249678
       parent: 2
 - proto: SignDirectionalMed
   entities:
@@ -29143,6 +29124,13 @@ entities:
     - type: Transform
       pos: -18.5,3.5
       parent: 2
+- proto: SpawnPointBoxer
+  entities:
+  - uid: 5318
+    components:
+    - type: Transform
+      pos: -13.5,5.5
+      parent: 2
 - proto: SpawnPointBrigmedic
   entities:
   - uid: 3757
@@ -29387,11 +29375,6 @@ entities:
     - type: Transform
       pos: -48.5,-28.5
       parent: 2
-  - uid: 3795
-    components:
-    - type: Transform
-      pos: -40.5,-8.5
-      parent: 2
   - uid: 3796
     components:
     - type: Transform
@@ -29411,6 +29394,11 @@ entities:
     components:
     - type: Transform
       pos: -21.5,2.5
+      parent: 2
+  - uid: 5317
+    components:
+    - type: Transform
+      pos: -41.5,-9.5
       parent: 2
 - proto: SpawnPointPsychologist
   entities:
@@ -31405,6 +31393,13 @@ entities:
     - type: Transform
       pos: -37.5,-6.5
       parent: 2
+- proto: VendingMachineCigs
+  entities:
+  - uid: 5315
+    components:
+    - type: Transform
+      pos: -41.5,-8.5
+      parent: 2
 - proto: VendingMachineClothing
   entities:
   - uid: 4077
@@ -31551,6 +31546,13 @@ entities:
     components:
     - type: Transform
       pos: -28.5,12.5
+      parent: 2
+- proto: VendingMachineTankDispenserEngineering
+  entities:
+  - uid: 5316
+    components:
+    - type: Transform
+      pos: -36.5,9.5
       parent: 2
 - proto: VendingMachineTankDispenserEVA
   entities:
@@ -35253,7 +35255,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -27106.482
+      secondsUntilStateChange: -27837.023
       state: Opening
     - type: Airlock
       autoClose: False
@@ -35765,7 +35767,7 @@ entities:
       pos: -21.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -35491.28
+      secondsUntilStateChange: -36221.824
       state: Opening
   - uid: 4840
     components:
@@ -35774,7 +35776,7 @@ entities:
       pos: -18.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -35490.38
+      secondsUntilStateChange: -36220.92
       state: Opening
   - uid: 4841
     components:
