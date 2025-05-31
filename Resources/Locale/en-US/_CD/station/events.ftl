@@ -1,1 +1,1 @@
-﻿station-event-ion-storm-synth = You detect an ion storm passing through your systems.
+﻿station-event-ion-storm-synth = Bzzt..! You detect an ion storm.
