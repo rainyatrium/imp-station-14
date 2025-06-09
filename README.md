@@ -9,12 +9,14 @@ Vermist Dust Sector is a closely linked fork of Impstation, which is a fork of S
 While we are not a server that allows sexual content, <b>we do not allow people under the age of 20 to play on Vermist.</b>
 
 ## Links
-
-[Website](https://www.youtube.com/watch?v=uVN6X8fIHdE) | [Impstation Website](https://impstation.gay/) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.io/about/nightlies/)
+[Website](https://impstation.gay/) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.io/about/nightlies/)
 
 ## Documentation/Wiki
 
-SS14's [docs site](https://docs.spacestation14.io/) has documentation on content, engine, game design and more. Impstation also has a lots of resources for new contributors to the project.
+SS14's [docs site](https://docs.spacestation14.com/) has documentation on SS14's content, engine, game design, and more.
+Additionally, see these resources for license and attribution information:
+- [Robust Generic Attribution](https://docs.spacestation14.com/en/specifications/robust-generic-attribution.html)
+- [Robust Station Image](https://docs.spacestation14.com/en/specifications/robust-station-image.html)
 
 ## Contributing
 
@@ -28,12 +30,23 @@ The Vermist Dust Sector folders are located at `Content.Client/_VDS`, `Content.S
 
 Keeping things defined like this makes the lives of the people maintaining the server much, much easier.
 
+We are not currently accepting translations of the game on our main repository. If you would like to translate the game into another language, consider creating a fork or contributing to a fork.
+
 
 ## Building
 
-1. Clone this repo.
-2. Run `RUN_THIS.py` to init submodules and download the engine.
-3. Compile the solution.
+1. Clone this repo:
+```shell
+git clone https://github.com/space-wizards/space-station-14.git
+```
+2. Go to the project folder and run `RUN_THIS.py` to initialize the submodules and load the engine:
+```shell
+cd space-station-14
+python RUN_THIS.py
+```
+3. Compile the solution:
+
+Build the server using `dotnet build`.
 
 [More detailed instructions on building the project.](https://docs.spacestation14.com/en/general-development/setup.html)
 
@@ -45,7 +58,7 @@ Content contributed to Impstation's repository before commit 7210960b2b30e17aa00
 
 Code in Content./VDS, Resources//VDS and any VDS specific scripts in Tools are licensed under AGPLv3. Other files are originally from other codebases and are not owned by VDS, though any code must be relicensable to AGPLv3. SS14 is MIT licensed so this forking is possible.
 
-Most assets are licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) unless stated otherwise. Assets have their license and the copyright in the metadata file. [Example](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
+Most assets are licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) unless stated otherwise. Assets have their license and copyright specified in the metadata file. For example, see the [metadata for a crowbar](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
 Note that some assets are licensed under the non-commercial [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) or similar non-commercial licenses and will need to be removed if you wish to use this project commercially.
 
@@ -68,3 +81,4 @@ Content under these subdirectories either originate from their respective fork, 
 | `_Harmony`       | Harmony             | https://github.com/ss14-harmony/ss14-harmony            | AGPL 3.0 |
 | `_NF`            | Frontier Station    | https://github.com/new-frontiers-14/frontier-station-14 | AGPL 3.0 |
 | `_White`         | White Dream         | https://github.com/WWhiteDreamProject/wwdpublic/        | AGPL 3.0 |
+| n/a              | Monolith            | https://github.com/Monolith-Station/Monolith            | AGPL 3.0 |
