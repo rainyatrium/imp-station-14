@@ -100,7 +100,7 @@
     - neck
   - type: ActivatableUI #imp
     inHandsOnly: false
-  - type: Item
+  - type: Item #imp
     size: Small
     storedRotation: -90
 
